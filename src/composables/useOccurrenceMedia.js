@@ -1,36 +1,40 @@
 import { ref, watch } from 'vue'
 
-const mediaRequests = new Map()
-
-function isDisplayableImage(media) {
-  const url = media?.identifier || media?.references || ''
-  return media?.type === 'StillImage' || /\.(avif|jpe?g|png|webp)(\?|$)/i.test(url)
+export function mediaUrl(media) {
+  return media?.identifier || media?.references || ''
 }
 
-async function fetchOccurrenceThumbnail(record) {
-  if (!record?.gbifID) return ''
-  if (!mediaRequests.has(record.gbifID)) {
-    const request = fetch(`https://api.gbif.org/v1/occurrence/${encodeURIComponent(record.gbifID)}`)
-      .then(response => response.ok ? response.json() : null)
-      .then(payload => {
-        const media = payload?.media?.find(isDisplayableImage)
-        return media?.identifier || media?.references || ''
-      })
-      .catch(() => '')
-    mediaRequests.set(record.gbifID, request)
-  }
-  return mediaRequests.get(record.gbifID)
+export function mediaKind(media) {
+  const type = String(media?.type || '').toLowerCase()
+  const format = String(media?.format || '').toLowerCase()
+  const url = mediaUrl(media).toLowerCase()
+
+  if (type.includes('sound') || format.startsWith('audio/') || /\.(aac|flac|m4a|mp3|oga|ogg|opus|wav)([?#]|$)/i.test(url)) return 'audio'
+  if (type.includes('movingimage') || type.includes('video') || format.startsWith('video/') || /\.(avi|m4v|mov|mp4|ogv|webm)([?#]|$)/i.test(url)) return 'video'
+  if (type.includes('stillimage') || format.startsWith('image/') || /\.(avif|gif|jpe?g|png|svg|webp)([?#]|$)/i.test(url)) return 'image'
+  return 'other'
+}
+
+export function recordMedia(record) {
+  if (!Array.isArray(record?.media)) return []
+  return record.media
+    .map((media, index) => ({
+      ...media,
+      id: `${record.gbifID || 'record'}-media-${index}`,
+      kind: mediaKind(media),
+      url: mediaUrl(media),
+    }))
+    .filter(media => media.url)
 }
 
 export function useOccurrenceMedia(recordSource) {
   const thumbnailUrl = ref('')
   watch(
     () => recordSource.value?.gbifID,
-    async () => {
+    () => {
       thumbnailUrl.value = ''
       const record = recordSource.value
-      const result = await fetchOccurrenceThumbnail(record)
-      if (recordSource.value?.gbifID === record?.gbifID) thumbnailUrl.value = result
+      thumbnailUrl.value = recordMedia(record).find(media => media.kind === 'image')?.url || ''
     },
     { immediate: true },
   )

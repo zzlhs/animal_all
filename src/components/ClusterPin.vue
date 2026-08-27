@@ -1,6 +1,5 @@
 <script setup>
 import { computed, toRef } from 'vue'
-import { Image as ImageIcon } from '@lucide/vue'
 import { useOccurrenceMedia } from '../composables/useOccurrenceMedia.js'
 import { translate } from '../i18n.js'
 import MapMarker from './MapMarker.vue'
@@ -14,9 +13,9 @@ const emit = defineEmits(['expand', 'hover-start', 'hover-end'])
 const representative = computed(() => props.cluster.records[0])
 const representativeRef = toRef(() => representative.value)
 const { thumbnailUrl } = useOccurrenceMedia(representativeRef)
-// The reference keeps cluster badges visually uniform; count changes should
-// not turn a dense area into an oversized visual target.
-const size = computed(() => 44)
+// Match the reference cluster marker: the representative photo fills the
+// circular marker while the count sits in a compact dark glass center.
+const size = computed(() => 50)
 </script>
 
 <template>
@@ -31,10 +30,10 @@ const size = computed(() => 44)
       @click.stop="emit('expand', cluster)"
     >
       <span class="photo-pin__image" :class="`taxon-${representative.class?.toLowerCase() || 'other'}`">
-        <img v-if="thumbnailUrl" :src="thumbnailUrl" :alt="representative.scientificName" />
-        <ImageIcon v-else :size="18" />
+        <img v-if="thumbnailUrl" class="photo-pin__image-blur" :src="thumbnailUrl" alt="" aria-hidden="true" />
+        <img v-if="thumbnailUrl" class="photo-pin__image-main" :src="thumbnailUrl" :alt="representative.scientificName" />
       </span>
-      <span class="photo-pin__count">{{ cluster.records.length }}</span>
+      <span class="photo-pin__inner"><span class="photo-pin__count">{{ cluster.records.length }}</span></span>
     </button>
   </MapMarker>
 </template>

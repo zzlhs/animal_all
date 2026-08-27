@@ -1,5 +1,5 @@
 <script setup>
-import { Ban, Bird, Bug, Layers3, SlidersHorizontal } from '@lucide/vue'
+import { AudioLines, Ban, Bird, Bug, Layers3, SlidersHorizontal } from '@lucide/vue'
 import { translate } from '../i18n.js'
 
 const props = defineProps({
@@ -15,6 +15,7 @@ const options = [
   { id: 'Animalia', title: 'filters.kingdom', subtitle: 'filters.kingdomSubtitle', icon: Layers3 },
   { id: 'Aves', title: 'filters.birds', subtitle: 'filters.birdsSubtitle', icon: Bird },
   { id: 'Insecta', title: 'filters.insects', subtitle: 'filters.insectsSubtitle', icon: Bug },
+  { id: 'audio', title: 'filters.audio', subtitle: 'filters.audioSubtitle', icon: AudioLines },
 ]
 
 const label = (key, values) => translate(props.language, key, values)

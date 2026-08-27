@@ -23,6 +23,8 @@ const messages = {
       birdsSubtitle: 'Class Aves',
       insects: 'Insects',
       insectsSubtitle: 'Class Insecta',
+      audio: 'Audio',
+      audioSubtitle: 'Records with playable audio',
       count: '{count} observations visible',
     },
     list: {
@@ -44,6 +46,14 @@ const messages = {
         HUMAN_OBSERVATION: 'Human observation',
         PRESERVED_SPECIMEN: 'Preserved specimen',
       },
+    },
+    media: {
+      imageCount: '{count} images',
+      audio: 'Audio',
+      video: 'Video',
+      playAudio: 'Play audio',
+      playVideo: 'Play video',
+      openSource: 'Open media source',
     },
     marker: {
       map: 'Map',
@@ -76,6 +86,8 @@ const messages = {
       birdsSubtitle: '鸟纲记录',
       insects: '昆虫',
       insectsSubtitle: '昆虫纲记录',
+      audio: '音频',
+      audioSubtitle: '含可播放音频的记录',
       count: '当前显示 {count} 条观测记录',
     },
     list: {
@@ -97,6 +109,14 @@ const messages = {
         HUMAN_OBSERVATION: '人工观测',
         PRESERVED_SPECIMEN: '保存标本',
       },
+    },
+    media: {
+      imageCount: '{count} 张图片',
+      audio: '音频',
+      video: '视频',
+      playAudio: '播放音频',
+      playVideo: '播放视频',
+      openSource: '打开媒体来源',
     },
     marker: {
       map: '地图',

@@ -9,6 +9,7 @@ import MapProvider from './components/MapProvider.vue'
 import OccurrenceCard from './components/OccurrenceCard.vue'
 import OccurrenceList from './components/OccurrenceList.vue'
 import PhotoPin from './components/PhotoPin.vue'
+import { recordMedia } from './composables/useOccurrenceMedia.js'
 import { normalizeLanguage } from './i18n.js'
 
 const allRecords = occurrences.records.filter(record => record.hasCoordinates)
@@ -38,6 +39,7 @@ let hoverCloseTimer = null
 const visibleRecords = computed(() => {
   if (activeFilter.value === 'all') return allRecords
   if (activeFilter.value === 'Animalia') return allRecords.filter(record => record.kingdom === 'Animalia')
+  if (activeFilter.value === 'audio') return allRecords.filter(record => recordMedia(record).some(item => item.kind === 'audio'))
   return allRecords.filter(record => record.class === activeFilter.value)
 })
 
@@ -62,7 +64,10 @@ function updateCardPosition() {
   if (!map.value || !selectedRecord.value) return
   const point = map.value.project([selectedRecord.value.longitude, selectedRecord.value.latitude])
   const cardWidth = 320
-  const cardHeight = 274
+  const richMedia = recordMedia(selectedRecord.value).some(item => item.kind === 'audio' || item.kind === 'video')
+  const cardHeight = recordMedia(selectedRecord.value).some(item => item.kind === 'video')
+    ? 456
+    : richMedia ? 366 : 274
   cardPosition.value = {
     left: Math.max(12, Math.min(window.innerWidth - cardWidth - 12, point.x - cardWidth / 2)),
     top: Math.max(12, Math.min(window.innerHeight - cardHeight - 12, point.y - cardHeight - 30)),
