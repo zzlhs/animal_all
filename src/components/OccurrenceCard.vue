@@ -4,6 +4,7 @@ import { AudioLines, CalendarDays, Database, ExternalLink, Image as ImageIcon, M
 import { recordMedia, useOccurrenceMedia } from '../composables/useOccurrenceMedia.js'
 import { formatEventDate, formatLocation } from '../map/formatting.js'
 import { translate, translateBasis } from '../i18n.js'
+import CachedAudioPlayer from './CachedAudioPlayer.vue'
 
 const props = defineProps({
   record: { type: Object, required: true },
@@ -56,7 +57,7 @@ const uncertainty = computed(() => props.record.coordinateUncertaintyInMeters ? 
             <span><AudioLines :size="14" /> {{ translate(language, 'media.audio') }}</span>
             <a :href="item.url" target="_blank" rel="noreferrer" :aria-label="translate(language, 'media.openSource')"><ExternalLink :size="13" /></a>
           </div>
-          <audio class="occurrence-card__audio" controls preload="metadata" :src="item.url" :aria-label="translate(language, 'media.playAudio')" />
+          <CachedAudioPlayer :source-url="item.url" :language="language" />
         </div>
 
         <div v-for="item in videoMedia" :key="item.id" class="occurrence-card__media-block">

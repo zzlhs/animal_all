@@ -319,6 +319,18 @@ button:focus-visible, a:focus-visible { outline: 2px solid #b8d8ff; outline-offs
 .occurrence-card__media-label a { color: rgba(255,255,255,.52); }
 .occurrence-card__media-label a:hover { color: #f472b6; }
 .occurrence-card__audio { width: 100%; height: 32px; accent-color: var(--accent); }
+.cached-audio-player { display: grid; gap: 5px; }
+.cached-audio-player__action { display: flex; align-items: center; justify-content: center; gap: 7px; width: 100%; height: 32px; padding: 0 12px; border: 1px solid rgba(255,255,255,.15); border-radius: 16px; background: rgba(244,114,182,.14); color: rgba(255,255,255,.90); font-size: 10px; cursor: pointer; transition: background 150ms ease, border-color 150ms ease, opacity 150ms ease; }
+.cached-audio-player__action:hover:not(:disabled) { border-color: rgba(244,114,182,.48); background: rgba(244,114,182,.23); }
+.cached-audio-player__action:disabled { cursor: wait; opacity: .72; }
+.cached-audio-player__action.is-error { border-color: rgba(251,146,60,.34); background: rgba(251,146,60,.12); }
+.cached-audio-player__action.is-loading svg { animation: audio-cache-spin 900ms linear infinite; }
+.cached-audio-player__status { display: flex; align-items: center; gap: 5px; min-height: 14px; color: rgba(190,230,211,.72); font-size: 9px; line-height: 1.35; }
+.cached-audio-player__status.is-error { color: rgba(253,186,116,.78); }
+.theme-light .cached-audio-player__action { border-color: rgba(38,38,38,.13); background: rgba(236,90,165,.11); color: rgba(38,38,38,.82); }
+.theme-light .cached-audio-player__status { color: rgba(19,120,87,.74); }
+.theme-light .cached-audio-player__status.is-error { color: rgba(180,83,9,.76); }
+@keyframes audio-cache-spin { to { transform: rotate(360deg); } }
 .occurrence-card__video { width: 100%; max-height: 180px; border-radius: 7px; background: #000; }
 .theme-light .occurrence-card__media-count { border-color: rgba(255,255,255,.88); background: rgba(255,255,255,.62); color: #262626; }
 .theme-light .occurrence-card__media { border-color: rgba(38,38,38,.12); }
