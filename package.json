@@ -1,23 +1,23 @@
 {
-  "name": "gbif-photo-globe",
+  "name": "gbif-photo-globe-workspace",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=22.13.0"
+  },
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "build": "vite build && node scripts/build-sites-worker.mjs",
-    "preview": "vite preview --host 0.0.0.0",
-    "start": "node server.mjs"
-  },
-  "dependencies": {
-    "@lucide/vue": "^1.34.0",
-    "mapbox-gl": "^3.29.0",
-    "maplibre-gl": "5.24.0",
-    "vue": "^3.5.41"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^6.0.8",
-    "vite": "^8.2.2"
+    "install:frontend": "node scripts/run-frontend.mjs install",
+    "install:backend": "node scripts/run-backend.mjs install",
+    "install:all": "npm run install:frontend && npm run install:backend",
+    "dev": "node scripts/run-frontend.mjs dev",
+    "build": "node scripts/run-frontend.mjs build",
+    "build:api": "node scripts/run-backend.mjs build",
+    "build:all": "npm run build && npm run build:api",
+    "test": "node scripts/run-frontend.mjs test",
+    "test:api": "node scripts/run-backend.mjs test",
+    "test:all": "npm test && npm run test:api",
+    "preview": "node scripts/run-frontend.mjs preview",
+    "start": "node scripts/run-frontend.mjs start",
+    "dev:api": "node scripts/run-backend.mjs dev"
   }
 }

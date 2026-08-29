@@ -1,0 +1,23 @@
+FROM debian:bookworm-slim AS tippecanoe-build
+ARG TIPPECANOE_VERSION=2.79.0
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends build-essential ca-certificates git libsqlite3-dev zlib1g-dev \
+  && git clone --depth 1 --branch "${TIPPECANOE_VERSION}" https://github.com/felt/tippecanoe.git /src/tippecanoe \
+  && make -C /src/tippecanoe -j"$(nproc)" \
+  && make -C /src/tippecanoe install PREFIX=/tools
+
+FROM golang:1.25-bookworm AS pmtiles-build
+ARG PMTILES_VERSION=v1.30.0
+RUN git clone --depth 1 --branch "${PMTILES_VERSION}" https://github.com/protomaps/go-pmtiles.git /src/go-pmtiles \
+  && cd /src/go-pmtiles \
+  && CGO_ENABLED=0 go build -trimpath -ldflags="-s -w" -o /tools/pmtiles .
+
+FROM debian:bookworm-slim
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends libsqlite3-0 libstdc++6 zlib1g \
+  && rm -rf /var/lib/apt/lists/*
+COPY --from=tippecanoe-build /tools/bin/tippecanoe /usr/local/bin/tippecanoe
+COPY --from=pmtiles-build /tools/pmtiles /usr/local/bin/pmtiles
+WORKDIR /work
+ENTRYPOINT []
+CMD ["tippecanoe", "--version"]

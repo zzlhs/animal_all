@@ -1,0 +1,74 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    env:
+      VITE_DATA_MODE: sample
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.13.1
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Install dependencies
+        run: npm ci
+        working-directory: frontend
+      - name: Test and build sample mode
+        run: |
+          npm test
+          npm run build
+        working-directory: frontend
+      - name: Build API mode
+        env:
+          VITE_DATA_MODE: api
+          VITE_API_BASE_URL: http://127.0.0.1:3100
+          VITE_PMTILES_URL: https://cdn.example.test/maps/ci.pmtiles
+        run: npm run build
+        working-directory: frontend
+
+  backend:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgis/postgis:16-3.5-alpine
+        env:
+          POSTGRES_DB: gbif_globe
+          POSTGRES_USER: gbif
+          POSTGRES_PASSWORD: gbif
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U gbif -d gbif_globe"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 20
+    env:
+      DATABASE_URL: postgres://gbif:gbif@127.0.0.1:5432/gbif_globe
+      TEST_DATABASE_URL: postgres://gbif:gbif@127.0.0.1:5432/gbif_globe
+      ACTIVE_DATASET_VERSION: sample-ci
+      H3_BASE_RESOLUTION: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.19.5
+          cache: npm
+          cache-dependency-path: backend/package-lock.json
+      - name: Install dependencies
+        run: npm --prefix backend ci
+      - name: Backend tests, typecheck and build
+        run: |
+          npm --prefix backend test
+          npm --prefix backend run typecheck
+          npm --prefix backend run build
+      - name: Seed PostGIS and export real map features
+        run: |
+          npm --prefix backend run sample:seed -- --version sample-ci
+          npm --prefix backend run map:export -- --version sample-ci --output artifacts/ci-map.ndjson
+          test "$(wc -l < backend/artifacts/ci-map.ndjson)" -gt 115

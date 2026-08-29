@@ -1,6 +1,7 @@
-node_modules/
-dist/
-backend/artifacts/
+node_modules
+dist
+artifacts
+coverage
 .env
 .env.*
 !.env.example
