@@ -3,6 +3,7 @@ import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import occurrences from '../public/data/occurrences.json'
 import { boundsFor, clusterOccurrences } from './map/clustering.js'
 import ClusterPin from './components/ClusterPin.vue'
+import AmbientSoundPanel from './components/AmbientSoundPanel.vue'
 import FilterPanel from './components/FilterPanel.vue'
 import MapControls from './components/MapControls.vue'
 import MapProvider from './components/MapProvider.vue'
@@ -12,11 +13,13 @@ import PhotoPin from './components/PhotoPin.vue'
 import ScalableOccurrenceLayer from './components/ScalableOccurrenceLayer.vue'
 import { recordMedia } from './composables/useOccurrenceMedia.js'
 import { DataApiConstants, MapViewConstants } from './config/data.constants.js'
+import { collectAmbientTracks } from './media/ambientSound.js'
 import { runtimeConfig, usesScalableData } from './config/runtime.js'
 import { normalizeLanguage, translate } from './i18n.js'
 import { occurrenceApi } from './services/occurrenceApi.js'
 
 const allRecords = occurrences.records.filter(record => record.hasCoordinates)
+const ambientTracks = collectAmbientTracks(allRecords)
 const dataBounds = boundsFor(allRecords)
 const sampleInitialCenter = [
   (dataBounds[0][0] + dataBounds[1][0]) / 2,
@@ -30,6 +33,9 @@ const zoom = ref(initialZoom)
 const theme = ref(localStorage.getItem('photo-globe-theme') || 'dark')
 const language = ref(normalizeLanguage(localStorage.getItem('photo-globe-language')))
 const filterOpen = ref(false)
+const ambientSoundOpen = ref(false)
+const ambientSoundPlaying = ref(false)
+const ambientSoundActive = computed(() => ambientSoundOpen.value || ambientSoundPlaying.value)
 const activeFilter = ref('all')
 const selectedRecord = ref(null)
 const selectedCluster = ref(null)
@@ -415,6 +421,7 @@ function selectFilter(value) {
 
 function closePanels(event) {
   if (!event.target.closest('.control-top-right') && !event.target.closest('.filter-panel')) filterOpen.value = false
+  if (!event.target.closest('.control-top-left') && !event.target.closest('.ambient-sound-panel')) ambientSoundOpen.value = false
 }
 
 watch(selectedRecord, updateCardPosition)
@@ -493,9 +500,11 @@ onUnmounted(() => {
 
     <MapControls
       :filter-open="filterOpen"
+      :ambient-sound-active="ambientSoundActive"
       :theme="theme"
       :language="language"
       @home="resetView"
+      @toggle-ambient-sound="ambientSoundOpen = !ambientSoundOpen"
       @toggle-filter="filterOpen = !filterOpen"
       @toggle-theme="toggleTheme"
       @toggle-language="toggleLanguage"
@@ -503,6 +512,16 @@ onUnmounted(() => {
       @zoom-out="map?.zoomOut({ duration: 280 })"
       @reset-bearing="map?.easeTo({ bearing: 0, pitch: 0, duration: 500 })"
     />
+
+    <Transition name="ambient-panel">
+      <AmbientSoundPanel
+        v-show="ambientSoundOpen"
+        :tracks="ambientTracks"
+        :language="language"
+        @close="ambientSoundOpen = false"
+        @playing-change="ambientSoundPlaying = $event"
+      />
+    </Transition>
 
     <Transition name="panel">
       <FilterPanel

@@ -1,22 +1,28 @@
 <script setup>
-import { Focus, House, Languages, Minus, Monitor, Plus, SlidersVertical } from '@lucide/vue'
+import { Focus, House, Languages, Minus, Monitor, Plus, SlidersVertical, Waves } from '@lucide/vue'
 import { translate } from '../i18n.js'
 
 const props = defineProps({
   filterOpen: { type: Boolean, default: false },
+  ambientSoundActive: { type: Boolean, default: false },
   theme: { type: String, default: 'dark' },
   language: { type: String, default: 'en' },
 })
 
-defineEmits(['home', 'toggle-filter', 'toggle-theme', 'toggle-language', 'zoom-in', 'zoom-out', 'reset-bearing'])
+defineEmits(['home', 'toggle-ambient-sound', 'toggle-filter', 'toggle-theme', 'toggle-language', 'zoom-in', 'zoom-out', 'reset-bearing'])
 
 const label = key => translate(props.language, key)
 </script>
 
 <template>
-  <button class="glass-control control-home" type="button" :aria-label="label('controls.home')" @click="$emit('home')">
-    <House :size="20" />
-  </button>
+  <div class="control-top-left">
+    <button class="glass-control" type="button" :aria-label="label('controls.home')" @click="$emit('home')">
+      <House :size="20" />
+    </button>
+    <button class="glass-control" :class="{ active: ambientSoundActive }" type="button" :aria-label="label('controls.ambientSound')" @click="$emit('toggle-ambient-sound')">
+      <Waves :size="20" />
+    </button>
+  </div>
 
   <div class="control-top-right">
     <button class="glass-control" :class="{ active: filterOpen }" type="button" :aria-label="label('controls.filter')" @click="$emit('toggle-filter')">
