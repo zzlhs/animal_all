@@ -59,7 +59,13 @@ const uncertainty = computed(() => props.record.coordinateUncertaintyInMeters ? 
             <span><AudioLines :size="14" /> {{ translate(language, 'media.audio') }}</span>
             <a :href="item.url" target="_blank" rel="noreferrer" :aria-label="translate(language, 'media.openSource')"><ExternalLink :size="13" /></a>
           </div>
-          <CachedAudioPlayer :source-url="item.url" :language="language" />
+          <CachedAudioPlayer
+            :source-url="item.url"
+            :record="record"
+            :media-item="item"
+            :thumbnail="imageMedia[0]?.url"
+            :language="language"
+          />
         </div>
 
         <div v-for="item in videoMedia" :key="item.id" class="occurrence-card__media-block">

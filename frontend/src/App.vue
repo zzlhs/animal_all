@@ -5,6 +5,7 @@ import { boundsFor, clusterOccurrences } from './map/clustering.js'
 import ClusterPin from './components/ClusterPin.vue'
 import AmbientSoundPanel from './components/AmbientSoundPanel.vue'
 import FilterPanel from './components/FilterPanel.vue'
+import FloatingAudioPlayer from './components/FloatingAudioPlayer.vue'
 import MapControls from './components/MapControls.vue'
 import MapProvider from './components/MapProvider.vue'
 import OccurrenceCard from './components/OccurrenceCard.vue'
@@ -37,6 +38,16 @@ const ambientSoundOpen = ref(false)
 const ambientSoundPlaying = ref(false)
 const ambientSoundActive = computed(() => ambientSoundOpen.value || ambientSoundPlaying.value)
 const activeFilter = ref('all')
+
+function toggleAmbientSound() {
+  ambientSoundOpen.value = !ambientSoundOpen.value
+  if (ambientSoundOpen.value) filterOpen.value = false
+}
+
+function toggleFilter() {
+  filterOpen.value = !filterOpen.value
+  if (filterOpen.value) ambientSoundOpen.value = false
+}
 const selectedRecord = ref(null)
 const selectedCluster = ref(null)
 const cardPosition = ref({ left: 16, top: 16 })
@@ -86,6 +97,16 @@ function fitRecords(records, options = {}) {
     return
   }
   map.value.fitBounds(bounds, { padding: 72, duration: 900, maxZoom: 11, ...options })
+}
+
+function locateRecord(record) {
+  if (!map.value || !record || record.longitude == null || record.latitude == null) return
+  map.value.easeTo({
+    center: [record.longitude, record.latitude],
+    zoom: Math.max(map.value.getZoom(), 8),
+    duration: 1000,
+  })
+  selectRecord(record)
 }
 
 function onMapLoad(instance) {
@@ -421,7 +442,7 @@ function selectFilter(value) {
 
 function closePanels(event) {
   if (!event.target.closest('.control-top-right') && !event.target.closest('.filter-panel')) filterOpen.value = false
-  if (!event.target.closest('.control-top-left') && !event.target.closest('.ambient-sound-panel')) ambientSoundOpen.value = false
+  if (!event.target.closest('.control-top-right') && !event.target.closest('.ambient-sound-panel')) ambientSoundOpen.value = false
 }
 
 watch(selectedRecord, updateCardPosition)
@@ -504,8 +525,8 @@ onUnmounted(() => {
       :theme="theme"
       :language="language"
       @home="resetView"
-      @toggle-ambient-sound="ambientSoundOpen = !ambientSoundOpen"
-      @toggle-filter="filterOpen = !filterOpen"
+      @toggle-ambient-sound="toggleAmbientSound"
+      @toggle-filter="toggleFilter"
       @toggle-theme="toggleTheme"
       @toggle-language="toggleLanguage"
       @zoom-in="map?.zoomIn({ duration: 280 })"
@@ -559,5 +580,10 @@ onUnmounted(() => {
         @load-more="loadMoreClusterRecords"
       />
     </Transition>
+    <FloatingAudioPlayer
+      :language="language"
+      @open-ambient-settings="toggleAmbientSound"
+      @locate-track="locateRecord"
+    />
   </main>
 </template>

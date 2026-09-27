@@ -19,9 +19,6 @@ const label = key => translate(props.language, key)
     <button class="glass-control" type="button" :aria-label="label('controls.home')" @click="$emit('home')">
       <House :size="20" />
     </button>
-    <button class="glass-control" :class="{ active: ambientSoundActive }" type="button" :aria-label="label('controls.ambientSound')" @click="$emit('toggle-ambient-sound')">
-      <Waves :size="20" />
-    </button>
   </div>
 
   <div class="control-top-right">
@@ -34,6 +31,9 @@ const label = key => translate(props.language, key)
     <button class="glass-control control-language" type="button" :aria-label="label(language === 'zh' ? 'controls.switchToEnglish' : 'controls.switchToChinese')" @click="$emit('toggle-language')">
       <Languages :size="18" />
       <span aria-hidden="true">{{ language === 'zh' ? 'EN' : '中' }}</span>
+    </button>
+    <button class="glass-control" :class="{ active: ambientSoundActive }" type="button" :aria-label="label('controls.ambientSound')" @click="$emit('toggle-ambient-sound')">
+      <Waves :size="20" />
     </button>
   </div>
 

@@ -2,6 +2,7 @@
 import { computed, watch } from 'vue'
 import { CircleAlert, Clock3, Pause, Play, Square, Volume2, Waves, X } from '@lucide/vue'
 import { useAmbientSound } from '../composables/useAmbientSound.js'
+import { useGlobalAudioPlayer } from '../composables/useGlobalAudioPlayer.js'
 import { AmbientSoundConstants } from '../media/ambientSound.constants.js'
 import { translate } from '../i18n.js'
 
@@ -36,10 +37,55 @@ const {
   stop,
 } = useAmbientSound(trackSource)
 
+const globalAudio = useGlobalAudioPlayer()
+
+globalAudio.registerAmbientHandlers({
+  togglePlayback,
+  stop,
+  pause: () => {
+    if (isPlaying.value) togglePlayback()
+  },
+})
+
 const isMixMode = computed(() => mode.value === AmbientSoundConstants.MODES.MIX)
 const mixLimitReached = computed(() => selectedMixTrackIds.value.length >= AmbientSoundConstants.MAX_MIX_TRACK_COUNT)
 const durationOptions = AmbientSoundConstants.DURATION_OPTIONS
 const secondsPerMinute = AmbientSoundConstants.SECONDS_PER_MINUTE
+
+watch(
+  [isPlaying, isPaused, isLoading, remainingSeconds, mode, selectedTracks, durationMinutes, () => props.language],
+  () => {
+    const totalSec = durationMinutes.value * secondsPerMinute
+    const elapsed = Math.max(0, totalSec - remainingSeconds.value)
+    const pct = totalSec > 0 ? (elapsed / totalSec) * 100 : 0
+
+    let title = ''
+    let subtitle = ''
+    const currentTracks = selectedTracks.value || []
+    if (mode.value === AmbientSoundConstants.MODES.SINGLE) {
+      title = currentTracks[0]?.displayName || currentTracks[0]?.scientificName || translate(props.language, 'floatingPlayer.ambientTitle')
+      subtitle = currentTracks[0]?.scientificName || translate(props.language, 'floatingPlayer.ambientSingle')
+    } else {
+      title = translate(props.language, 'floatingPlayer.ambientTitle')
+      subtitle = translate(props.language, 'floatingPlayer.ambientMix', { count: currentTracks.length })
+    }
+
+    globalAudio.updateAmbientState({
+      isPlaying: isPlaying.value,
+      isPaused: isPaused.value,
+      isLoading: isLoading.value,
+      mode: mode.value,
+      title,
+      subtitle,
+      remainingSeconds: remainingSeconds.value,
+      durationMinutes: durationMinutes.value,
+      progressPercent: Math.min(100, Math.max(0, pct)),
+      trackCount: currentTracks.length,
+      thumbnail: currentTracks[0]?.thumbnail || '',
+    })
+  },
+  { immediate: true }
+)
 
 const actionLabel = computed(() => {
   if (isLoading.value) return translate(props.language, 'ambient.loading')
