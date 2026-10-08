@@ -1,0 +1,15 @@
+{
+  "sourceUrl": "https://xeno-canto.org/sounds/uploaded/OOECIWCSWV/XC988362-LS_59944-Masked-Laughingthrush-calls-B.mp3",
+  "source": {
+    "status": 206,
+    "contentType": "audio/mpeg",
+    "bytes": 4096,
+    "contentRange": "bytes 0-4095/446633"
+  },
+  "proxy": {
+    "status": 206,
+    "contentType": "audio/mpeg",
+    "bytes": 4096,
+    "contentRange": "bytes 0-4095/446633"
+  }
+}

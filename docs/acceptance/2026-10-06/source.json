@@ -1,0 +1,139 @@
+{
+  "archive": "/Users/zhengyuan/Downloads/0038781-260806074905277.zip",
+  "archiveBytes": 488539479,
+  "uncompressedBytes": 2349827362,
+  "occurrenceRows": 914853,
+  "selectedRows": 572391,
+  "duplicateSelectedIds": 0,
+  "kingdomRows": {
+    "Animalia": 572391,
+    "Fungi": 12403,
+    "Plantae": 311781,
+    "": 951,
+    "Chromista": 3345,
+    "Bacillati": 6481,
+    "Protozoa": 441,
+    "Pseudomonadati": 5281,
+    "Orthornavirae": 1251,
+    "Shotokuvirae": 215,
+    "Pararnavirae": 142,
+    "Bamfordvirae": 26,
+    "Heunggongvirae": 24,
+    "Fusobacteriati": 8,
+    "Methanobacteriati": 109,
+    "Thermoproteati": 2,
+    "Thermotogati": 2
+  },
+  "uniqueSelectedOccurrences": 572391,
+  "plottable": 566878,
+  "aves": 247338,
+  "insecta": 214323,
+  "species": 87,
+  "sourceSpecies": 17949,
+  "nonNumericSpeciesOccurrences": 543262,
+  "missingSpeciesOccurrences": 27782,
+  "mediaSections": [
+    "multimedia.txt",
+    "verbatim/multimedia.txt",
+    "verbatim/audubon.txt"
+  ],
+  "mediaRows": 1290999,
+  "validMediaRows": 1290999,
+  "unmatchedMediaRows": 537165,
+  "uniqueLinkedMedia": 753834,
+  "mediaTypes": {
+    "image": 745692,
+    "audio": 8067
+  },
+  "audioOccurrences": 7742,
+  "plottableAudioOccurrences": 7669,
+  "imageOccurrences": 438438,
+  "samples": [
+    {
+      "gbifID": "6360481313",
+      "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+      "decimalLatitude": "22.479331",
+      "decimalLongitude": "114.355097",
+      "class": "Polychaeta"
+    },
+    {
+      "gbifID": "6360482327",
+      "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+      "decimalLatitude": "22.479331",
+      "decimalLongitude": "114.355097",
+      "class": "Polychaeta"
+    },
+    {
+      "gbifID": "6360482334",
+      "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+      "decimalLatitude": "22.479331",
+      "decimalLongitude": "114.355097",
+      "class": "Polychaeta"
+    },
+    {
+      "gbifID": "6360483301",
+      "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+      "decimalLatitude": "22.35083",
+      "decimalLongitude": "114.05505",
+      "class": "Polychaeta"
+    },
+    {
+      "gbifID": "6360483303",
+      "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+      "decimalLatitude": "22.479331",
+      "decimalLongitude": "114.355097",
+      "class": "Polychaeta"
+    },
+    {
+      "gbifID": "6360483317",
+      "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+      "decimalLatitude": "22.35083",
+      "decimalLongitude": "114.05505",
+      "class": "Polychaeta"
+    },
+    {
+      "gbifID": "6360484304",
+      "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+      "decimalLatitude": "22.479331",
+      "decimalLongitude": "114.355097",
+      "class": "Polychaeta"
+    },
+    {
+      "gbifID": "6360484314",
+      "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+      "decimalLatitude": "22.35083",
+      "decimalLongitude": "114.05505",
+      "class": "Polychaeta"
+    },
+    {
+      "gbifID": "6360484324",
+      "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+      "decimalLatitude": "22.479331",
+      "decimalLongitude": "114.355097",
+      "class": "Polychaeta"
+    },
+    {
+      "gbifID": "6360485324",
+      "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+      "decimalLatitude": "22.479331",
+      "decimalLongitude": "114.355097",
+      "class": "Polychaeta"
+    },
+    {
+      "gbifID": "6360481319",
+      "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+      "decimalLatitude": "22.479331",
+      "decimalLongitude": "114.355097",
+      "class": "Polychaeta"
+    },
+    {
+      "gbifID": "6360482339",
+      "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+      "decimalLatitude": "22.479331",
+      "decimalLongitude": "114.355097",
+      "class": "Polychaeta"
+    }
+  ],
+  "archiveSha256": "b03957f5a57299f804d81ae8b480979343d1ff69920625b0d0a57684b5fb668d",
+  "auditSeconds": 39.94
+}

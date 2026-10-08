@@ -1,0 +1,3002 @@
+{
+  "measuredAt": "2026-10-08T01:05:31.059Z",
+  "base": "http://127.0.0.1:4318",
+  "reports": [
+    {
+      "cache": "cold",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "sampleDurationMs": 30000,
+      "firstMarkerMs": 5588,
+      "firstImageMs": 6881.699999928474,
+      "marks": {
+        "gbif-map-ready": 422,
+        "gbif-first-markers": 5575,
+        "gbif-first-photo": 6882
+      },
+      "domMarkers": 7,
+      "alerts": [
+        "layers.gbif-occurrence-counts.filter[2][1]: string expected, number found重试 / Retry"
+      ],
+      "images": [
+        {
+          "url": "http://127.0.0.1:4318/api/media/351036/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/351036/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/139676/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/139676/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/163843/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/163843/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/487817/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/487817/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/314473/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/314473/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        }
+      ],
+      "navigation": {
+        "name": "http://127.0.0.1:4318/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 315.39999997615814,
+        "navigationId": 7033,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.2999999523162842,
+        "domainLookupStart": 0.2999999523162842,
+        "domainLookupEnd": 0.2999999523162842,
+        "connectStart": 0.2999999523162842,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.2999999523162842,
+        "requestStart": 0.7999999523162842,
+        "responseStart": 258.10000002384186,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 258.10000002384186,
+        "responseEnd": 260.10000002384186,
+        "transferSize": 6849,
+        "encodedBodySize": 6549,
+        "decodedBodySize": 6549,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 270.2999999523163,
+        "domContentLoadedEventStart": 270.2999999523163,
+        "domContentLoadedEventEnd": 270.39999997615814,
+        "domComplete": 315.39999997615814,
+        "loadEventStart": 315.39999997615814,
+        "loadEventEnd": 315.39999997615814,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "detailMs": 154,
+      "transferredBytes": 4485916,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4318/",
+          "start": 782382.281414,
+          "type": "Document",
+          "status": 200,
+          "mime": "text/html",
+          "diskCache": false,
+          "headers": {
+            "Connection": "keep-alive",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "Keep-Alive": "timeout=5",
+            "Transfer-Encoding": "chunked",
+            "content-type": "text/html; charset=utf-8"
+          },
+          "durationMs": 260,
+          "transferredBytes": 6745
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/index-D5fWwQrg.css",
+          "start": 782382.542372,
+          "type": "Stylesheet",
+          "status": 200,
+          "mime": "text/css",
+          "diskCache": false,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"422e-1a119099c7e-br\"",
+            "Connection": "keep-alive",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "16942",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "Content-Type": "text/css",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 7,
+          "transferredBytes": 17273
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/OccurrenceCard-C5baz82c.js",
+          "start": 782382.542592,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": false,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"2e13-1a119099c54-br\"",
+            "Connection": "keep-alive",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "11795",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 10,
+          "transferredBytes": 12133
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/index-7e-vej9c.js",
+          "start": 782382.542558,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": false,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"137b6-1a119099c7b-br\"",
+            "Connection": "keep-alive",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "79798",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 10,
+          "transferredBytes": 80137
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/index-6Y6QECVD.js",
+          "start": 782382.542504,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": false,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"2167f-1a119099c67-br\"",
+            "Connection": "keep-alive",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "136831",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 9,
+          "transferredBytes": 137171
+        },
+        {
+          "url": "http://127.0.0.1:4318/favicon.ico",
+          "start": 782382.6093,
+          "type": "Other",
+          "status": 404,
+          "mime": "text/html",
+          "diskCache": false,
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "content-type": "text/html; charset=utf-8",
+            "Connection": "keep-alive"
+          },
+          "durationMs": 8,
+          "transferredBytes": 1714
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/maplibre-gl-BVGaFixQ.js",
+          "start": 782382.609714,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": false,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"3e156-1a119099ca9-br\"",
+            "Connection": "keep-alive",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "254294",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 20,
+          "transferredBytes": 254634
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/v1/meta",
+          "start": 782382.611599,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/json",
+          "diskCache": false,
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "cache-control": "no-cache",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "content-type": "application/json",
+            "Connection": "keep-alive"
+          },
+          "durationMs": 40,
+          "transferredBytes": 611
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/index-_p4Zo1ve.js",
+          "start": 782382.656148,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": false,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"1c42-1a119099c7f-br\"",
+            "Connection": "keep-alive",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "7234",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 2,
+          "transferredBytes": 7571
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/maps/1e6c848e-3677-4a48-845c-90fd4ff82cf9.pmtiles",
+          "start": 782382.706518,
+          "type": "Fetch",
+          "status": 206,
+          "mime": "application/vnd.pmtiles",
+          "diskCache": false,
+          "headers": {
+            "cache-control": "public, max-age=31536000, immutable",
+            "access-control-expose-headers": "Content-Range, Content-Length, Accept-Ranges",
+            "Connection": "keep-alive",
+            "Content-Range": "bytes 0-16383/254634690",
+            "accept-ranges": "bytes",
+            "access-control-allow-origin": "*",
+            "Keep-Alive": "timeout=5",
+            "Content-Length": "16384",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "content-type": "application/vnd.pmtiles"
+          },
+          "durationMs": 6,
+          "transferredBytes": 16785
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/sprites/ofm_f384/ofm.png",
+          "start": 782382.707182,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=31536000, immutable",
+            "etag": "\"8996a519d218dc5f98015267709dae272a77bb74ef0ecc5a0992dcf276c1be4c\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "49454",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 645,
+          "transferredBytes": 49788
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/sprites/ofm_f384/ofm.json",
+          "start": 782382.705254,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/json",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=31536000, immutable",
+            "content-encoding": "gzip",
+            "etag": "\"a93daf0e53bde0cfc1bcab018b10cc859e4cff54e5d064f70b4adb768addda60\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "2559",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:31 GMT",
+            "content-type": "application/json",
+            "vary": "Accept-Encoding"
+          },
+          "durationMs": 1039,
+          "transferredBytes": 2946
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/maps/1e6c848e-3677-4a48-845c-90fd4ff82cf9.pmtiles",
+          "start": 782382.794717,
+          "type": "Fetch",
+          "status": 206,
+          "mime": "application/vnd.pmtiles",
+          "diskCache": false,
+          "headers": {
+            "cache-control": "public, max-age=31536000, immutable",
+            "access-control-expose-headers": "Content-Range, Content-Length, Accept-Ranges",
+            "Connection": "keep-alive",
+            "Content-Range": "bytes 6683-13974/254634690",
+            "accept-ranges": "bytes",
+            "access-control-allow-origin": "*",
+            "Keep-Alive": "timeout=5",
+            "Content-Length": "7292",
+            "Date": "Thu, 08 Oct 2026 01:04:32 GMT",
+            "content-type": "application/vnd.pmtiles"
+          },
+          "durationMs": 2092,
+          "transferredBytes": 7695
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/6/3.png",
+          "start": 782384.216046,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"9b91020e8301183da4f7f88d863a19e752aefe6a9b2bb1f44760138e8848d450\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "272546",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:32 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1176,
+          "transferredBytes": 272898
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/5/4.png",
+          "start": 782384.216894,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"78a53ee4a2a7ada21ce7915b9a3c5fdd660e05f321ace94ab481ed570ffbf64b\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "23279",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1494,
+          "transferredBytes": 23630
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/6/4.png",
+          "start": 782384.216565,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"b73372b7f9e7b6706c5a8bf81b8e50d513eb43c98a69ef4269d77e14355e46c9\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "110144",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1507,
+          "transferredBytes": 110496
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/5/2.png",
+          "start": 782384.216787,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"82b12637889158d3b1683bf8401f96e197275c0d7c08305474ca1ba7141b23e4\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "199531",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1586,
+          "transferredBytes": 199883
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/5/3.png",
+          "start": 782384.216305,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"12d3609ff2eede71f990d098702dd41ab396c7c7e5b8e80e914c2f8ca004046d\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "226658",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1594,
+          "transferredBytes": 227010
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/7/4.png",
+          "start": 782384.217566,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"5438526cd6b486a8d19b271b3d9f57dc55fa91714b9d580e6f455fa73dd5c6b5\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "153951",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1836,
+          "transferredBytes": 154303
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/6/2.png",
+          "start": 782384.216439,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"87a83fe9eeccf681ed3d624c26c95520b4e22a50a6a2d550b7bcbab74c02ab8d\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "334409",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 2085,
+          "transferredBytes": 334761
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/7/2.png",
+          "start": 782384.217414,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"6af8d59fc708c9690945b1245556b81a2183bd9d16a3ebb05eafc4091c62c4f0\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "223906",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 2108,
+          "transferredBytes": 224258
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/4/3.png",
+          "start": 782384.21768,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"6a10e700e2509935efe3d1b362934bdd62723252820e7abc3231f48df8445dd1\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "256920",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 2110,
+          "transferredBytes": 257272
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/7/3.png",
+          "start": 782384.216679,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"0c56d6e34df09b8c5e4151415b37116b655cf8aa872c0600cbd046238ea9da6e\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "44497",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 2120,
+          "transferredBytes": 44848
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/6/5.png",
+          "start": 782384.218025,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"f5d76f9aea82fa4cc89e8a03b86e8168fa32c6edc6ab25f6982e0889b3ab5fd8\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "11496",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 2208,
+          "transferredBytes": 11847
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/4/2.png",
+          "start": 782384.217923,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"fd496bdcfdecc2781dda16c3c4a0af7a97ea72a6c4fa7062ee13f1fcd96135b5\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "205781",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 2229,
+          "transferredBytes": 206133
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/5/5.png",
+          "start": 782384.218391,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"bbe29155976b768585c0395e7b7e3ac6fb12172984f404f64140c20f6ff745ff\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "7906",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 2292,
+          "transferredBytes": 8256
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/maps/1e6c848e-3677-4a48-845c-90fd4ff82cf9.pmtiles",
+          "start": 782384.88804,
+          "type": "Fetch",
+          "status": 206,
+          "mime": "application/vnd.pmtiles",
+          "diskCache": false,
+          "headers": {
+            "cache-control": "public, max-age=31536000, immutable",
+            "access-control-expose-headers": "Content-Range, Content-Length, Accept-Ranges",
+            "Connection": "keep-alive",
+            "Content-Range": "bytes 1073970-1079923/254634690",
+            "accept-ranges": "bytes",
+            "access-control-allow-origin": "*",
+            "Keep-Alive": "timeout=5",
+            "Content-Length": "5954",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "application/vnd.pmtiles"
+          },
+          "durationMs": 1625,
+          "transferredBytes": 6362
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/5/1.png",
+          "start": 782384.218125,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"9eb088686c3a17ccc79e551ebd8cf6debda7a04e6de366c0c5be5cd2b2d18989\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "86775",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 2352,
+          "transferredBytes": 87126
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/6/1.png",
+          "start": 782384.217788,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"7b04e4f61a0c0ba2aa1d42b4f145d22b99e63cd6cc4aa707d1d2f77e40476e04\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "162036",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 2553,
+          "transferredBytes": 162388
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/4/4.png",
+          "start": 782384.218221,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"857fa59d93cef91128341ba218abcb8929a63e7799715a3b2ad924fd4e19d68d\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "123178",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 2596,
+          "transferredBytes": 123530
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/fonts/Noto%20Sans%20Bold/0-255.pbf",
+          "start": 782384.403161,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/x-protobuf",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-encoding": "gzip",
+            "etag": "\"24d1ba2023e09e91ce836db91cff05757c7e33db1d317a1d45069f92c81df516\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "44628",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "application/x-protobuf",
+            "vary": "Accept-Encoding"
+          },
+          "durationMs": 2428,
+          "transferredBytes": 45039
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/7/1.png",
+          "start": 782385.404943,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"9000bb6c51cc8d2550494f5a6a117d650004b5b22fa020e5cffded3fd0028e70\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "98684",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1449,
+          "transferredBytes": 99035
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/6/0.png",
+          "start": 782385.806124,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"1f9f44d45ce412292cec098d870e508753ee2b753645167a9852e0a3eae23d63\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "15917",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1189,
+          "transferredBytes": 16268
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/5/0.png",
+          "start": 782386.057769,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"bb27e003f95b520f2bfb8293c3c3d2ebd14a4dea09dc5caaa35c02e36ee61f0d\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "27757",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1008,
+          "transferredBytes": 28108
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/3/2.png",
+          "start": 782385.81401,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"e63972391432110d8ade8c5e145472139c7a46f3431d49ca9eb50f3f560088d8\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "72857",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1252,
+          "transferredBytes": 73208
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/4/1.png",
+          "start": 782385.726993,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"154f265dd9eaa5c373aae5a30a19751449ee20e29fa5fdd58f87135e9f3231e5\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "80064",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1385,
+          "transferredBytes": 80415
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/7/5.png",
+          "start": 782385.713133,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"08116ef423002d5127e504835853610be74db0d04caed094191ef079e0b53e33\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "24717",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1413,
+          "transferredBytes": 25068
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/7/0.png",
+          "start": 782386.30574,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"887434602d6cbc3649cc6e38d2c8fb45f61ffc29846b5a292e7898877d7da807\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "2209",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 821,
+          "transferredBytes": 2559
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/4/0.png",
+          "start": 782386.333405,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"b0bf50c6bf439f128bffdea8bef6eed6740e8fa1f66e5b8d5481f99b1431b802\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "23120",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1017,
+          "transferredBytes": 23471
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/3/1.png",
+          "start": 782386.329923,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"bea8916c1fb9636a6270eb90205520538b2bc60e53828612f94ae06e8e76d42a\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "93677",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1085,
+          "transferredBytes": 94028
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/maps/1e6c848e-3677-4a48-845c-90fd4ff82cf9.pmtiles",
+          "start": 782384.888189,
+          "type": "Fetch",
+          "status": 206,
+          "mime": "application/vnd.pmtiles",
+          "diskCache": false,
+          "headers": {
+            "cache-control": "public, max-age=31536000, immutable",
+            "access-control-expose-headers": "Content-Range, Content-Length, Accept-Ranges",
+            "Connection": "keep-alive",
+            "Content-Range": "bytes 1079924-1081112/254634690",
+            "accept-ranges": "bytes",
+            "access-control-allow-origin": "*",
+            "Keep-Alive": "timeout=5",
+            "Content-Length": "1189",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "application/vnd.pmtiles"
+          },
+          "durationMs": 2528,
+          "transferredBytes": 1597
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/fonts/Noto%20Sans%20Italic/0-255.pbf",
+          "start": 782384.403036,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/x-protobuf",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-encoding": "gzip",
+            "etag": "\"48fd8adcf1e467a814f65d76afdc39352e49988a25b686de9bcd9cc4eb432cb7\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "47141",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "application/x-protobuf",
+            "vary": "Accept-Encoding"
+          },
+          "durationMs": 3029,
+          "transferredBytes": 47552
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/3/0.png",
+          "start": 782386.341625,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"b1c89f95fbd6be5303488794c9b558c20ac8286c8c6472d6ec798aea6d25bd6c\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "83705",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1119,
+          "transferredBytes": 84056
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/2/1.png",
+          "start": 782386.427938,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"9fe4304f3d1484285a639d5fa3fbda2e62032a120ccf1863ba1985b3e2684e40\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "182520",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1164,
+          "transferredBytes": 182872
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/1/1.png",
+          "start": 782386.51246,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"af5bac96edbb771d27b834aa78f465cd25a1a8b04f40c3aa26de3d31d6164cd3\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "119873",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1201,
+          "transferredBytes": 120225
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/fonts/Noto%20Sans%20Regular/0-255.pbf",
+          "start": 782386.520844,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/x-protobuf",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-encoding": "gzip",
+            "etag": "\"3fb4d04ab0ccda72271210bb0c19500412f78cc8d3097beadc1687155d10483a\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "42482",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "application/x-protobuf",
+            "vary": "Accept-Encoding"
+          },
+          "durationMs": 1283,
+          "transferredBytes": 42893
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/fonts/Noto%20Sans%20Regular/8192-8447.pbf",
+          "start": 782386.520973,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/x-protobuf",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-encoding": "gzip",
+            "etag": "\"d423a7ab75e72555da5d766bd071db61a20b7566a87fe7e69e39dfb524d1ebb6\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "23562",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "application/x-protobuf",
+            "vary": "Accept-Encoding"
+          },
+          "durationMs": 1292,
+          "transferredBytes": 23973
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/0/3.png",
+          "start": 782386.775168,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"d14ef71fd03483f1c870a1f8ec4df2a988243585f3f3868544ba82aba8d1ad89\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "12346",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1076,
+          "transferredBytes": 12697
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/v1/map-records?revision=1e6c848e-3677-4a48-845c-90fd4ff82cf9&ids=1840947295,5006701080,5006714708,5006731401,5063041189,5063222263,6148112301",
+          "start": 782387.86161,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/json",
+          "diskCache": false,
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "cache-control": "private, max-age=60",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "application/json",
+            "Connection": "keep-alive"
+          },
+          "durationMs": 47,
+          "transferredBytes": 8445
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/0/0.png",
+          "start": 782387.170021,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"988b99ede39100aa8f01a068781b2c7f65716a2a0c77a4ffe5346bb99c757fbb\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "1879",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 837,
+          "transferredBytes": 2229
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/0/2.png",
+          "start": 782386.818145,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"9fbaf6116a0ccd93e8379dfe51cf2d8f2f2cf98999e66ed43d81cee8f6cba216\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "145477",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1317,
+          "transferredBytes": 145829
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/2/0.png",
+          "start": 782386.452504,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"2b295fbfaf8bad565002d0f29093425ff999c6699affb84d8523f1e599ca8510\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "144525",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1876,
+          "transferredBytes": 144877
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/737600/pin?v=v1",
+          "start": 782387.91656,
+          "type": "Image",
+          "status": 503,
+          "mime": "text/plain",
+          "diskCache": false,
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "cache-control": "no-store",
+            "retry-after": "30",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "text/plain;charset=UTF-8",
+            "Connection": "keep-alive"
+          },
+          "durationMs": 434,
+          "transferredBytes": 29
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/1/0.png",
+          "start": 782386.573283,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"2db55c309e83c85d9f57bc74467a873342c795203fc0f8663038e3e0cafb7cae\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "22001",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1861,
+          "transferredBytes": 22352
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/0/1.png",
+          "start": 782387.16942,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "etag": "\"18e1345ee7a7c0bcf99e9290bc0bb44bba0731db983488a473eac35180fa7577\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "61411",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:36 GMT",
+            "content-type": "image/png"
+          },
+          "durationMs": 1728,
+          "transferredBytes": 61762
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/351036/pin?v=v1",
+          "start": 782387.916634,
+          "type": "Image",
+          "status": 200,
+          "mime": "image/webp",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=86400, stale-while-revalidate=604800",
+            "etag": "\"8076b086220edd55cf9a04350d583d8df0596fbb3d032b37972241b634f4586a\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "5678",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:36 GMT",
+            "content-type": "image/webp"
+          },
+          "durationMs": 1245,
+          "transferredBytes": 6029
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/163843/pin?v=v1",
+          "start": 782387.916684,
+          "type": "Image",
+          "status": 200,
+          "mime": "image/webp",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=86400, stale-while-revalidate=604800",
+            "etag": "\"21153e73c3cf3ae89d8ea84eabea7d0cf27479b454b0c9c9bf9ac2020b7ab9dd\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "5586",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:36 GMT",
+            "content-type": "image/webp"
+          },
+          "durationMs": 1514,
+          "transferredBytes": 5937
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/314473/pin?v=v1",
+          "start": 782387.916732,
+          "type": "Image",
+          "status": 200,
+          "mime": "image/webp",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=86400, stale-while-revalidate=604800",
+            "etag": "\"8223e0a4c9c60b7af84047c39f3e5aeb0e54e773cac89c2adb489feab564ad29\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "3388",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:37 GMT",
+            "content-type": "image/webp"
+          },
+          "durationMs": 1721,
+          "transferredBytes": 3739
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/139676/pin?v=v1",
+          "start": 782387.916661,
+          "type": "Image",
+          "status": 200,
+          "mime": "image/webp",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=86400, stale-while-revalidate=604800",
+            "etag": "\"b693de3b3cf1fb9b3ff93d1cb79b12c3e989e08d7b40c4769cbcd2560dc7b64c\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "6246",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:37 GMT",
+            "content-type": "image/webp"
+          },
+          "durationMs": 1833,
+          "transferredBytes": 6597
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/487817/pin?v=v1",
+          "start": 782387.916709,
+          "type": "Image",
+          "status": 200,
+          "mime": "image/webp",
+          "diskCache": false,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=86400, stale-while-revalidate=604800",
+            "etag": "\"5a528ebce1b13a4bac6a602b227bfc4dad61f52bfaca942f0ffa39d5e693bca5\"",
+            "Connection": "keep-alive",
+            "x-content-type-options": "nosniff",
+            "content-length": "5590",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:37 GMT",
+            "content-type": "image/webp"
+          },
+          "durationMs": 2563,
+          "transferredBytes": 5941
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/v1/cells/2/824ba7fffffffff/occurrences?revision=1e6c848e-3677-4a48-845c-90fd4ff82cf9&filter=all&limit=20",
+          "start": 782412.348448,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/json",
+          "diskCache": false,
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "cache-control": "no-store",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:59 GMT",
+            "content-type": "application/json",
+            "Connection": "keep-alive"
+          },
+          "durationMs": 54,
+          "transferredBytes": 18737
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/737600/pin?v=v1",
+          "start": 782412.435044,
+          "type": "Image",
+          "status": 503,
+          "mime": "text/plain",
+          "diskCache": false,
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "cache-control": "no-store",
+            "retry-after": "30",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:04:59 GMT",
+            "content-type": "text/plain;charset=UTF-8",
+            "Connection": "keep-alive"
+          },
+          "durationMs": 4,
+          "transferredBytes": 29
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/728429/pin?v=v1",
+          "start": 782412.435166,
+          "type": "Image",
+          "status": 503,
+          "mime": "text/plain",
+          "diskCache": false,
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "cache-control": "no-store",
+            "retry-after": "30",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:05:00 GMT",
+            "content-type": "text/plain;charset=UTF-8",
+            "Connection": "keep-alive"
+          },
+          "durationMs": 412,
+          "transferredBytes": 29
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/750781/pin?v=v1",
+          "start": 782412.435205,
+          "type": "Image",
+          "status": 503,
+          "mime": "text/plain",
+          "diskCache": false,
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "cache-control": "no-store",
+            "retry-after": "30",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:05:00 GMT",
+            "content-type": "text/plain;charset=UTF-8",
+            "Connection": "keep-alive"
+          },
+          "durationMs": 413,
+          "transferredBytes": 29
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/736306/pin?v=v1",
+          "start": 782412.435138,
+          "type": "Image",
+          "status": 503,
+          "mime": "text/plain",
+          "diskCache": false,
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "cache-control": "no-store",
+            "retry-after": "30",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:05:00 GMT",
+            "content-type": "text/plain;charset=UTF-8",
+            "Connection": "keep-alive"
+          },
+          "durationMs": 533,
+          "transferredBytes": 29
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/742887/pin?v=v1",
+          "start": 782412.435112,
+          "type": "Image",
+          "status": 503,
+          "mime": "text/plain",
+          "diskCache": false,
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "cache-control": "no-store",
+            "retry-after": "30",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:05:00 GMT",
+            "content-type": "text/plain;charset=UTF-8",
+            "Connection": "keep-alive"
+          },
+          "durationMs": 534,
+          "transferredBytes": 29
+        }
+      ],
+      "pending": [
+        {
+          "url": "blob:http://127.0.0.1:4318/3e3d9cd9-2c18-4018-95a9-dc888906eeec",
+          "start": 782382.672324,
+          "type": "Script"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/723948/pin?v=v1",
+          "start": 782412.435186,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/721960/pin?v=v1",
+          "start": 782412.435227,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/729289/pin?v=v1",
+          "start": 782412.435247,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/743044/pin?v=v1",
+          "start": 782412.435268,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/738975/pin?v=v1",
+          "start": 782412.435288,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/746674/pin?v=v1",
+          "start": 782412.43531,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/743760/pin?v=v1",
+          "start": 782412.435333,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/750783/pin?v=v1",
+          "start": 782412.435353,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/743045/pin?v=v1",
+          "start": 782412.435372,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/722609/pin?v=v1",
+          "start": 782412.435399,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/743430/pin?v=v1",
+          "start": 782412.435421,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/746675/pin?v=v1",
+          "start": 782412.435441,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/730153/pin?v=v1",
+          "start": 782412.435462,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/733415/pin?v=v1",
+          "start": 782412.435481,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/743101/pin?v=v1",
+          "start": 782412.435504,
+          "type": "Image"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "cache": "warm",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "sampleDurationMs": 30000,
+      "firstMarkerMs": 717.1000000238419,
+      "firstImageMs": 753.8000000715256,
+      "marks": {
+        "gbif-map-ready": 144,
+        "gbif-first-markers": 688,
+        "gbif-first-photo": 754
+      },
+      "domMarkers": 7,
+      "alerts": [
+        "layers.gbif-occurrence-counts.filter[2][1]: string expected, number found重试 / Retry"
+      ],
+      "images": [
+        {
+          "url": "http://127.0.0.1:4318/api/media/351036/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/351036/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/139676/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/139676/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/163843/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/163843/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/487817/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/487817/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/314473/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/314473/pin?v=v1",
+          "loaded": true,
+          "width": 128
+        }
+      ],
+      "navigation": {
+        "name": "http://127.0.0.1:4318/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 64.20000004768372,
+        "navigationId": 1997,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.30000007152557373,
+        "domainLookupStart": 0.30000007152557373,
+        "domainLookupEnd": 0.30000007152557373,
+        "connectStart": 0.30000007152557373,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.30000007152557373,
+        "requestStart": 0.7000000476837158,
+        "responseStart": 16.800000071525574,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 16.800000071525574,
+        "responseEnd": 17.200000047683716,
+        "transferSize": 6849,
+        "encodedBodySize": 6549,
+        "decodedBodySize": 6549,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 26,
+        "domContentLoadedEventStart": 26,
+        "domContentLoadedEventEnd": 26.100000023841858,
+        "domComplete": 64.20000004768372,
+        "loadEventStart": 64.20000004768372,
+        "loadEventEnd": 64.20000004768372,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "detailMs": 132,
+      "transferredBytes": 58561,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4318/assets/index-D5fWwQrg.css",
+          "start": 782413.350498,
+          "type": "Stylesheet",
+          "status": 200,
+          "mime": "text/css",
+          "diskCache": true,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"422e-1a119099c7e-br\"",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "16942",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "Content-Type": "text/css",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/",
+          "start": 782413.330046,
+          "type": "Document",
+          "status": 200,
+          "mime": "text/html",
+          "diskCache": false,
+          "headers": {
+            "Connection": "keep-alive",
+            "Date": "Thu, 08 Oct 2026 01:05:00 GMT",
+            "Keep-Alive": "timeout=5",
+            "Transfer-Encoding": "chunked",
+            "content-type": "text/html; charset=utf-8"
+          },
+          "durationMs": 17,
+          "transferredBytes": 6745
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/OccurrenceCard-C5baz82c.js",
+          "start": 782413.350738,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": true,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"2e13-1a119099c54-br\"",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "11795",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 3,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/index-7e-vej9c.js",
+          "start": 782413.350698,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": true,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"137b6-1a119099c7b-br\"",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "79798",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 3,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/index-6Y6QECVD.js",
+          "start": 782413.35065,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": true,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"2167f-1a119099c67-br\"",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "136831",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 2,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/v1/meta",
+          "start": 782413.408148,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/json",
+          "diskCache": false,
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "cache-control": "no-cache",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:05:00 GMT",
+            "content-type": "application/json",
+            "Connection": "keep-alive"
+          },
+          "durationMs": 10,
+          "transferredBytes": 611
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/maplibre-gl-BVGaFixQ.js",
+          "start": 782413.406136,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": true,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"3e156-1a119099ca9-br\"",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "254294",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 4,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/index-_p4Zo1ve.js",
+          "start": 782413.432862,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": true,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"1c42-1a119099c7f-br\"",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "7234",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/sprites/ofm_f384/ofm.json",
+          "start": 782413.474177,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/json",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=31536000, immutable",
+            "content-encoding": "gzip",
+            "etag": "\"a93daf0e53bde0cfc1bcab018b10cc859e4cff54e5d064f70b4adb768addda60\"",
+            "x-content-type-options": "nosniff",
+            "content-length": "2559",
+            "Date": "Thu, 08 Oct 2026 01:04:31 GMT",
+            "content-type": "application/json",
+            "vary": "Accept-Encoding"
+          },
+          "durationMs": 0,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/sprites/ofm_f384/ofm.png",
+          "start": 782413.475196,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=31536000, immutable",
+            "content-length": "49454",
+            "etag": "\"8996a519d218dc5f98015267709dae272a77bb74ef0ecc5a0992dcf276c1be4c\"",
+            "Date": "Thu, 08 Oct 2026 01:04:30 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 0,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/maps/1e6c848e-3677-4a48-845c-90fd4ff82cf9.pmtiles",
+          "start": 782413.474856,
+          "type": "Fetch",
+          "status": 206,
+          "mime": "application/vnd.pmtiles",
+          "diskCache": false,
+          "headers": {
+            "cache-control": "public, max-age=31536000, immutable",
+            "access-control-expose-headers": "Content-Range, Content-Length, Accept-Ranges",
+            "Connection": "keep-alive",
+            "Content-Range": "bytes 0-16383/254634690",
+            "accept-ranges": "bytes",
+            "access-control-allow-origin": "*",
+            "Keep-Alive": "timeout=5",
+            "Content-Length": "16384",
+            "Date": "Thu, 08 Oct 2026 01:05:00 GMT",
+            "content-type": "application/vnd.pmtiles"
+          },
+          "durationMs": 2,
+          "transferredBytes": 16785
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/maps/1e6c848e-3677-4a48-845c-90fd4ff82cf9.pmtiles",
+          "start": 782413.525091,
+          "type": "Fetch",
+          "status": 206,
+          "mime": "application/vnd.pmtiles",
+          "diskCache": false,
+          "headers": {
+            "cache-control": "public, max-age=31536000, immutable",
+            "access-control-expose-headers": "Content-Range, Content-Length, Accept-Ranges",
+            "Connection": "keep-alive",
+            "Content-Range": "bytes 6683-13974/254634690",
+            "accept-ranges": "bytes",
+            "access-control-allow-origin": "*",
+            "Keep-Alive": "timeout=5",
+            "Content-Length": "7292",
+            "Date": "Thu, 08 Oct 2026 01:05:01 GMT",
+            "content-type": "application/vnd.pmtiles"
+          },
+          "durationMs": 34,
+          "transferredBytes": 7695
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/maps/1e6c848e-3677-4a48-845c-90fd4ff82cf9.pmtiles",
+          "start": 782413.559815,
+          "type": "Fetch",
+          "status": 206,
+          "mime": "application/vnd.pmtiles",
+          "diskCache": false,
+          "headers": {
+            "cache-control": "public, max-age=31536000, immutable",
+            "access-control-expose-headers": "Content-Range, Content-Length, Accept-Ranges",
+            "Connection": "keep-alive",
+            "Content-Range": "bytes 1073970-1079923/254634690",
+            "accept-ranges": "bytes",
+            "access-control-allow-origin": "*",
+            "Keep-Alive": "timeout=5",
+            "Content-Length": "5954",
+            "Date": "Thu, 08 Oct 2026 01:05:01 GMT",
+            "content-type": "application/vnd.pmtiles"
+          },
+          "durationMs": 2,
+          "transferredBytes": 6362
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/maps/1e6c848e-3677-4a48-845c-90fd4ff82cf9.pmtiles",
+          "start": 782413.559914,
+          "type": "Fetch",
+          "status": 206,
+          "mime": "application/vnd.pmtiles",
+          "diskCache": false,
+          "headers": {
+            "cache-control": "public, max-age=31536000, immutable",
+            "access-control-expose-headers": "Content-Range, Content-Length, Accept-Ranges",
+            "Connection": "keep-alive",
+            "Content-Range": "bytes 1079924-1081112/254634690",
+            "accept-ranges": "bytes",
+            "access-control-allow-origin": "*",
+            "Keep-Alive": "timeout=5",
+            "Content-Length": "1189",
+            "Date": "Thu, 08 Oct 2026 01:05:01 GMT",
+            "content-type": "application/vnd.pmtiles"
+          },
+          "durationMs": 3,
+          "transferredBytes": 1597
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/fonts/Noto%20Sans%20Italic/0-255.pbf",
+          "start": 782413.659812,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/x-protobuf",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-encoding": "gzip",
+            "etag": "\"48fd8adcf1e467a814f65d76afdc39352e49988a25b686de9bcd9cc4eb432cb7\"",
+            "x-content-type-options": "nosniff",
+            "content-length": "47141",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "application/x-protobuf",
+            "vary": "Accept-Encoding"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/fonts/Noto%20Sans%20Bold/0-255.pbf",
+          "start": 782413.659945,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/x-protobuf",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-encoding": "gzip",
+            "etag": "\"24d1ba2023e09e91ce836db91cff05757c7e33db1d317a1d45069f92c81df516\"",
+            "x-content-type-options": "nosniff",
+            "content-length": "44628",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "application/x-protobuf",
+            "vary": "Accept-Encoding"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/fonts/Noto%20Sans%20Regular/0-255.pbf",
+          "start": 782413.662165,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/x-protobuf",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-encoding": "gzip",
+            "etag": "\"3fb4d04ab0ccda72271210bb0c19500412f78cc8d3097beadc1687155d10483a\"",
+            "x-content-type-options": "nosniff",
+            "content-length": "42482",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "application/x-protobuf",
+            "vary": "Accept-Encoding"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/fonts/Noto%20Sans%20Regular/8192-8447.pbf",
+          "start": 782413.662332,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/x-protobuf",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-encoding": "gzip",
+            "etag": "\"d423a7ab75e72555da5d766bd071db61a20b7566a87fe7e69e39dfb524d1ebb6\"",
+            "x-content-type-options": "nosniff",
+            "content-length": "23562",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "application/x-protobuf",
+            "vary": "Accept-Encoding"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/6/3.png",
+          "start": 782414.022827,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "272546",
+            "etag": "\"9b91020e8301183da4f7f88d863a19e752aefe6a9b2bb1f44760138e8848d450\"",
+            "Date": "Thu, 08 Oct 2026 01:04:32 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/5/3.png",
+          "start": 782414.023039,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "226658",
+            "etag": "\"12d3609ff2eede71f990d098702dd41ab396c7c7e5b8e80e914c2f8ca004046d\"",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/6/2.png",
+          "start": 782414.023154,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "334409",
+            "etag": "\"87a83fe9eeccf681ed3d624c26c95520b4e22a50a6a2d550b7bcbab74c02ab8d\"",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/6/4.png",
+          "start": 782414.023255,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "110144",
+            "etag": "\"b73372b7f9e7b6706c5a8bf81b8e50d513eb43c98a69ef4269d77e14355e46c9\"",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 2,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/7/3.png",
+          "start": 782414.023352,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "44497",
+            "etag": "\"0c56d6e34df09b8c5e4151415b37116b655cf8aa872c0600cbd046238ea9da6e\"",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 2,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/5/2.png",
+          "start": 782414.023448,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "199531",
+            "etag": "\"82b12637889158d3b1683bf8401f96e197275c0d7c08305474ca1ba7141b23e4\"",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 3,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/5/4.png",
+          "start": 782414.023551,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "23279",
+            "etag": "\"78a53ee4a2a7ada21ce7915b9a3c5fdd660e05f321ace94ab481ed570ffbf64b\"",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 3,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/7/2.png",
+          "start": 782414.023647,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "223906",
+            "etag": "\"6af8d59fc708c9690945b1245556b81a2183bd9d16a3ebb05eafc4091c62c4f0\"",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 3,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/7/4.png",
+          "start": 782414.023732,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "153951",
+            "etag": "\"5438526cd6b486a8d19b271b3d9f57dc55fa91714b9d580e6f455fa73dd5c6b5\"",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 3,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/4/3.png",
+          "start": 782414.023836,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "256920",
+            "etag": "\"6a10e700e2509935efe3d1b362934bdd62723252820e7abc3231f48df8445dd1\"",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 3,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/6/1.png",
+          "start": 782414.023929,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "162036",
+            "etag": "\"7b04e4f61a0c0ba2aa1d42b4f145d22b99e63cd6cc4aa707d1d2f77e40476e04\"",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 3,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/4/2.png",
+          "start": 782414.024018,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "205781",
+            "etag": "\"fd496bdcfdecc2781dda16c3c4a0af7a97ea72a6c4fa7062ee13f1fcd96135b5\"",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 3,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/6/5.png",
+          "start": 782414.0241,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "11496",
+            "etag": "\"f5d76f9aea82fa4cc89e8a03b86e8168fa32c6edc6ab25f6982e0889b3ab5fd8\"",
+            "Date": "Thu, 08 Oct 2026 01:04:33 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 3,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/5/1.png",
+          "start": 782414.024182,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "86775",
+            "etag": "\"9eb088686c3a17ccc79e551ebd8cf6debda7a04e6de366c0c5be5cd2b2d18989\"",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 3,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/4/4.png",
+          "start": 782414.024279,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "123178",
+            "etag": "\"857fa59d93cef91128341ba218abcb8929a63e7799715a3b2ad924fd4e19d68d\"",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 4,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/5/5.png",
+          "start": 782414.024388,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "7906",
+            "etag": "\"bbe29155976b768585c0395e7b7e3ac6fb12172984f404f64140c20f6ff745ff\"",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 4,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/v1/map-records?revision=1e6c848e-3677-4a48-845c-90fd4ff82cf9&ids=1840947295,5006701080,5006714708,5006731401,5063041189,5063222263,6148112301",
+          "start": 782414.031596,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/json",
+          "diskCache": true,
+          "headers": {
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "application/json",
+            "cache-control": "private, max-age=60"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/7/1.png",
+          "start": 782414.059508,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "98684",
+            "etag": "\"9000bb6c51cc8d2550494f5a6a117d650004b5b22fa020e5cffded3fd0028e70\"",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 2,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/163843/pin?v=v1",
+          "start": 782414.07861,
+          "type": "Image",
+          "status": 200,
+          "mime": "image/webp",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=86400, stale-while-revalidate=604800",
+            "content-length": "5586",
+            "etag": "\"21153e73c3cf3ae89d8ea84eabea7d0cf27479b454b0c9c9bf9ac2020b7ab9dd\"",
+            "Date": "Thu, 08 Oct 2026 01:04:36 GMT",
+            "content-type": "image/webp",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/487817/pin?v=v1",
+          "start": 782414.078634,
+          "type": "Image",
+          "status": 200,
+          "mime": "image/webp",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=86400, stale-while-revalidate=604800",
+            "content-length": "5590",
+            "etag": "\"5a528ebce1b13a4bac6a602b227bfc4dad61f52bfaca942f0ffa39d5e693bca5\"",
+            "Date": "Thu, 08 Oct 2026 01:04:37 GMT",
+            "content-type": "image/webp",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/314473/pin?v=v1",
+          "start": 782414.078657,
+          "type": "Image",
+          "status": 200,
+          "mime": "image/webp",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=86400, stale-while-revalidate=604800",
+            "content-length": "3388",
+            "etag": "\"8223e0a4c9c60b7af84047c39f3e5aeb0e54e773cac89c2adb489feab564ad29\"",
+            "Date": "Thu, 08 Oct 2026 01:04:37 GMT",
+            "content-type": "image/webp",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/351036/pin?v=v1",
+          "start": 782414.078553,
+          "type": "Image",
+          "status": 200,
+          "mime": "image/webp",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=86400, stale-while-revalidate=604800",
+            "content-length": "5678",
+            "etag": "\"8076b086220edd55cf9a04350d583d8df0596fbb3d032b37972241b634f4586a\"",
+            "Date": "Thu, 08 Oct 2026 01:04:36 GMT",
+            "content-type": "image/webp",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/139676/pin?v=v1",
+          "start": 782414.078579,
+          "type": "Image",
+          "status": 200,
+          "mime": "image/webp",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=86400, stale-while-revalidate=604800",
+            "content-length": "6246",
+            "etag": "\"b693de3b3cf1fb9b3ff93d1cb79b12c3e989e08d7b40c4769cbcd2560dc7b64c\"",
+            "Date": "Thu, 08 Oct 2026 01:04:37 GMT",
+            "content-type": "image/webp",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/7/5.png",
+          "start": 782414.060424,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "24717",
+            "etag": "\"08116ef423002d5127e504835853610be74db0d04caed094191ef079e0b53e33\"",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/4/1.png",
+          "start": 782414.060915,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "80064",
+            "etag": "\"154f265dd9eaa5c373aae5a30a19751449ee20e29fa5fdd58f87135e9f3231e5\"",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/6/0.png",
+          "start": 782414.061315,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "15917",
+            "etag": "\"1f9f44d45ce412292cec098d870e508753ee2b753645167a9852e0a3eae23d63\"",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/3/2.png",
+          "start": 782414.061826,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "72857",
+            "etag": "\"e63972391432110d8ade8c5e145472139c7a46f3431d49ca9eb50f3f560088d8\"",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 0,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/5/0.png",
+          "start": 782414.062257,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "27757",
+            "etag": "\"bb27e003f95b520f2bfb8293c3c3d2ebd14a4dea09dc5caaa35c02e36ee61f0d\"",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 0,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/7/0.png",
+          "start": 782414.062648,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "2209",
+            "etag": "\"887434602d6cbc3649cc6e38d2c8fb45f61ffc29846b5a292e7898877d7da807\"",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 0,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/3/1.png",
+          "start": 782414.063023,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "93677",
+            "etag": "\"bea8916c1fb9636a6270eb90205520538b2bc60e53828612f94ae06e8e76d42a\"",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 0,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/4/0.png",
+          "start": 782414.063431,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "23120",
+            "etag": "\"b0bf50c6bf439f128bffdea8bef6eed6740e8fa1f66e5b8d5481f99b1431b802\"",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 0,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/3/0.png",
+          "start": 782414.063823,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "83705",
+            "etag": "\"b1c89f95fbd6be5303488794c9b558c20ac8286c8c6472d6ec798aea6d25bd6c\"",
+            "Date": "Thu, 08 Oct 2026 01:04:34 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 0,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/2/1.png",
+          "start": 782414.064223,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "182520",
+            "etag": "\"9fe4304f3d1484285a639d5fa3fbda2e62032a120ccf1863ba1985b3e2684e40\"",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 0,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/2/0.png",
+          "start": 782414.064669,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "144525",
+            "etag": "\"2b295fbfaf8bad565002d0f29093425ff999c6699affb84d8523f1e599ca8510\"",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 0,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/1/1.png",
+          "start": 782414.065314,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "119873",
+            "etag": "\"af5bac96edbb771d27b834aa78f465cd25a1a8b04f40c3aa26de3d31d6164cd3\"",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 0,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/1/0.png",
+          "start": 782414.0661,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "22001",
+            "etag": "\"2db55c309e83c85d9f57bc74467a873342c795203fc0f8663038e3e0cafb7cae\"",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 0,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/0/3.png",
+          "start": 782414.066719,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "12346",
+            "etag": "\"d14ef71fd03483f1c870a1f8ec4df2a988243585f3f3868544ba82aba8d1ad89\"",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 0,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/737600/pin?v=v1",
+          "start": 782414.078475,
+          "type": "Image",
+          "status": 503,
+          "mime": "text/plain",
+          "diskCache": false,
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "cache-control": "no-store",
+            "retry-after": "30",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:05:01 GMT",
+            "content-type": "text/plain;charset=UTF-8",
+            "Connection": "keep-alive"
+          },
+          "durationMs": 7,
+          "transferredBytes": 29
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/0/2.png",
+          "start": 782414.067355,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "145477",
+            "etag": "\"9fbaf6116a0ccd93e8379dfe51cf2d8f2f2cf98999e66ed43d81cee8f6cba216\"",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 0,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/0/1.png",
+          "start": 782414.09267,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "61411",
+            "etag": "\"18e1345ee7a7c0bcf99e9290bc0bb44bba0731db983488a473eac35180fa7577\"",
+            "Date": "Thu, 08 Oct 2026 01:04:36 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 3,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/basemap/natural_earth/ne2sr/3/0/0.png",
+          "start": 782414.093118,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "image/png",
+          "diskCache": true,
+          "headers": {
+            "x-resource-cache": "MISS",
+            "cache-control": "public, max-age=604800, stale-while-revalidate=86400",
+            "content-length": "1879",
+            "etag": "\"988b99ede39100aa8f01a068781b2c7f65716a2a0c77a4ffe5346bb99c757fbb\"",
+            "Date": "Thu, 08 Oct 2026 01:04:35 GMT",
+            "content-type": "image/png",
+            "x-content-type-options": "nosniff"
+          },
+          "durationMs": 2,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/v1/cells/2/824ba7fffffffff/occurrences?revision=1e6c848e-3677-4a48-845c-90fd4ff82cf9&filter=all&limit=20",
+          "start": 782443.389554,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/json",
+          "diskCache": false,
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "cache-control": "no-store",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:05:30 GMT",
+            "content-type": "application/json",
+            "Connection": "keep-alive"
+          },
+          "durationMs": 18,
+          "transferredBytes": 18737
+        }
+      ],
+      "pending": [
+        {
+          "url": "blob:http://127.0.0.1:4318/0b71e758-abe8-4c7f-8df5-5c7abc9a09e4",
+          "start": 782413.446074,
+          "type": "Script"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/737600/pin?v=v1",
+          "start": 782443.454211,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/742887/pin?v=v1",
+          "start": 782443.454282,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/736306/pin?v=v1",
+          "start": 782443.454308,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/728429/pin?v=v1",
+          "start": 782443.454335,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/723948/pin?v=v1",
+          "start": 782443.454363,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/750781/pin?v=v1",
+          "start": 782443.45439,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/721960/pin?v=v1",
+          "start": 782443.454416,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/729289/pin?v=v1",
+          "start": 782443.454442,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/743044/pin?v=v1",
+          "start": 782443.454471,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/738975/pin?v=v1",
+          "start": 782443.454497,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/746674/pin?v=v1",
+          "start": 782443.454523,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/743760/pin?v=v1",
+          "start": 782443.454556,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/750783/pin?v=v1",
+          "start": 782443.454583,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/743045/pin?v=v1",
+          "start": 782443.454612,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/722609/pin?v=v1",
+          "start": 782443.454639,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/743430/pin?v=v1",
+          "start": 782443.454666,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/746675/pin?v=v1",
+          "start": 782443.454698,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/730153/pin?v=v1",
+          "start": 782443.454726,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/733415/pin?v=v1",
+          "start": 782443.454752,
+          "type": "Image"
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/media/743101/pin?v=v1",
+          "start": 782443.454783,
+          "type": "Image"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

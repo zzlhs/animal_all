@@ -1,0 +1,28 @@
+{
+  "tracks": 8067,
+  "hosts": {
+    "observation.org": {
+      "tracks": 5,
+      "allowed": 5,
+      "blocked": 0
+    },
+    "xeno-canto.org": {
+      "tracks": 3994,
+      "allowed": 3994,
+      "blocked": 0
+    },
+    "static.inaturalist.org": {
+      "tracks": 4068,
+      "allowed": 0,
+      "blocked": 4068
+    }
+  },
+  "blockedOccurrences": 3745,
+  "allowedOccurrences": 3997,
+  "originalScreenshot": [
+    {
+      "identifier": "https://xeno-canto.org/sounds/uploaded/OOECIWCSWV/XC988362-LS_59944-Masked-Laughingthrush-calls-B.mp3",
+      "format": "audio/mpeg"
+    }
+  ]
+}

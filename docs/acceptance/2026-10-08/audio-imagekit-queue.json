@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-08",
+  "checks": {
+    "unitTestsPassed": 116,
+    "databaseIntegrationTestsPassed": 14,
+    "webBuild": "passed",
+    "workerTypecheck": "passed",
+    "databaseMigration": "009_audio_download_jobs.sql",
+    "queueHttp": "passed",
+    "browserQueuePage": "passed",
+    "browserFailureStatus": "passed",
+    "browserFloatingRetry": "passed",
+    "browserSoundscapePlayback": "passed",
+    "browserPauseResume": "passed",
+    "browserConsoleErrors": 0,
+    "firstBufferCountdownRegression": "passed"
+  },
+  "realSourceDownload": {
+    "gbifId": "5995331953",
+    "bytes": 180327,
+    "elapsedMs": 5741,
+    "persistedToDisk": false
+  },
+  "imagekit": {
+    "configured": true,
+    "realUploadVerified": true,
+    "cdnPlaybackVerified": true,
+    "urlEndpoint": "https://ik.imagekit.io/jhz79pomy5",
+    "cdnRangeStatus": 206,
+    "cdnContentRange": "bytes 0-4095/180327"
+  },
+  "currentQueue": {
+    "total": 5,
+    "ready": 5,
+    "queued": 0,
+    "downloading": 0,
+    "uploading": 0,
+    "failed": 0,
+    "storedBytes": 1267707
+  },
+  "limitations": [
+    "Only recordings triggered by details or playback are queued; the complete audio collection has not been downloaded."
+  ],
+  "screenshots": [
+    "audio-imagekit-configured.jpg",
+    "audio-imagekit-playing.jpg"
+  ]
+}

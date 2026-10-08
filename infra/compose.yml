@@ -1,0 +1,103 @@
+services:
+  postgres:
+    image: postgis/postgis:16-3.5
+    container_name: gbif-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-gbif}
+      POSTGRES_USER: ${POSTGRES_USER:-gbif}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-gbif}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-gbif} -d ${POSTGRES_DB:-gbif}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  migrate:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.worker
+    command: ["npm", "run", "db:migrate"]
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-gbif}:${POSTGRES_PASSWORD:-gbif}@postgres:5432/${POSTGRES_DB:-gbif}
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  web:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.web
+    container_name: gbif-web
+    restart: unless-stopped
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      PORT: 3000
+      NODE_ENV: production
+      DATABASE_URL: postgres://${POSTGRES_USER:-gbif}:${POSTGRES_PASSWORD:-gbif}@postgres:5432/${POSTGRES_DB:-gbif}
+      DATABASE_POOL_MAX: 10
+      MAP_STORAGE_DIR: /app/data/maps
+      RESOURCE_CACHE_DIR: /app/data/cache
+      IMAGEKIT_PRIVATE_KEY: ${IMAGEKIT_PRIVATE_KEY:-}
+      IMAGEKIT_URL_ENDPOINT: ${IMAGEKIT_URL_ENDPOINT:-}
+      IMAGEKIT_FOLDER: ${IMAGEKIT_FOLDER:-/gbif-photo-globe}
+      AUDIO_WORKER_EMBEDDED: ${AUDIO_WORKER_EMBEDDED:-true}
+      AUDIO_FIRST_RESPONSE_TIMEOUT_MS: ${AUDIO_FIRST_RESPONSE_TIMEOUT_MS:-20000}
+      AUDIO_IDLE_TIMEOUT_MS: ${AUDIO_IDLE_TIMEOUT_MS:-30000}
+      AUDIO_TOTAL_TIMEOUT_MS: ${AUDIO_TOTAL_TIMEOUT_MS:-600000}
+      AUDIO_MAX_BYTES: ${AUDIO_MAX_BYTES:-20971520}
+    volumes:
+      - ../data/maps:/app/data/maps:ro
+      - ../data/cache:/app/data/cache
+    depends_on:
+      postgres:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+
+  worker:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.worker
+    container_name: gbif-worker
+    restart: "no"
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-gbif}:${POSTGRES_PASSWORD:-gbif}@postgres:5432/${POSTGRES_DB:-gbif}
+      DATABASE_POOL_MAX: 4
+      IMAGEKIT_PRIVATE_KEY: ${IMAGEKIT_PRIVATE_KEY:-}
+      IMAGEKIT_URL_ENDPOINT: ${IMAGEKIT_URL_ENDPOINT:-}
+      IMAGEKIT_FOLDER: ${IMAGEKIT_FOLDER:-/gbif-photo-globe}
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  audio-worker:
+    profiles: [audio-worker]
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.worker
+    command: ["npm", "run", "audio:worker"]
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-gbif}:${POSTGRES_PASSWORD:-gbif}@postgres:5432/${POSTGRES_DB:-gbif}
+      DATABASE_POOL_MAX: 4
+      IMAGEKIT_PRIVATE_KEY: ${IMAGEKIT_PRIVATE_KEY:-}
+      IMAGEKIT_URL_ENDPOINT: ${IMAGEKIT_URL_ENDPOINT:-}
+      IMAGEKIT_FOLDER: ${IMAGEKIT_FOLDER:-/gbif-photo-globe}
+      AUDIO_FIRST_RESPONSE_TIMEOUT_MS: ${AUDIO_FIRST_RESPONSE_TIMEOUT_MS:-20000}
+      AUDIO_IDLE_TIMEOUT_MS: ${AUDIO_IDLE_TIMEOUT_MS:-30000}
+      AUDIO_TOTAL_TIMEOUT_MS: ${AUDIO_TOTAL_TIMEOUT_MS:-600000}
+      AUDIO_MAX_BYTES: ${AUDIO_MAX_BYTES:-20971520}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+
+volumes:
+  pgdata:

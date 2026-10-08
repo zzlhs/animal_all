@@ -1,0 +1,494 @@
+{
+  "revision": "1e6c848e-3677-4a48-845c-90fd4ff82cf9",
+  "pmtilesBytes": 254634690,
+  "featureExportBytes": 317842222,
+  "header": {
+    "specVersion": 3,
+    "rootDirectoryOffset": 127,
+    "rootDirectoryLength": 797,
+    "jsonMetadataOffset": 924,
+    "jsonMetadataLength": 5759,
+    "leafDirectoryOffset": 6683,
+    "leafDirectoryLength": 1054167,
+    "tileDataOffset": 1060850,
+    "tileDataLength": 253573840,
+    "numAddressedTiles": 558905,
+    "numTileEntries": 558905,
+    "numTileContents": 558894,
+    "clustered": true,
+    "internalCompression": 2,
+    "tileCompression": 2,
+    "tileType": 1,
+    "minZoom": 0,
+    "maxZoom": 18,
+    "minLon": 72.517494,
+    "minLat": 5.354021,
+    "maxLon": 135.206169,
+    "maxLat": 54.421711,
+    "centerZoom": 18,
+    "centerLon": 121.58226,
+    "centerLat": 25.091196
+  },
+  "tiles": 558905,
+  "tilesOver1MiB": 0,
+  "compressedByZoom": {
+    "0": {
+      "tiles": 1,
+      "p95": 6514,
+      "p99": 6514,
+      "max": 6514
+    },
+    "1": {
+      "tiles": 1,
+      "p95": 6606,
+      "p99": 6606,
+      "max": 6606
+    },
+    "2": {
+      "tiles": 2,
+      "p95": 5954,
+      "p99": 5954,
+      "max": 5954
+    },
+    "3": {
+      "tiles": 5,
+      "p95": 18208,
+      "p99": 18208,
+      "max": 18208
+    },
+    "4": {
+      "tiles": 9,
+      "p95": 9748,
+      "p99": 9748,
+      "max": 9748
+    },
+    "5": {
+      "tiles": 25,
+      "p95": 14772,
+      "p99": 19238,
+      "max": 19238
+    },
+    "6": {
+      "tiles": 66,
+      "p95": 4929,
+      "p99": 6114,
+      "max": 6114
+    },
+    "7": {
+      "tiles": 193,
+      "p95": 4370,
+      "p99": 7750,
+      "max": 8656
+    },
+    "8": {
+      "tiles": 572,
+      "p95": 1929,
+      "p99": 2802,
+      "max": 3155
+    },
+    "9": {
+      "tiles": 1578,
+      "p95": 1628,
+      "p99": 3562,
+      "max": 6367
+    },
+    "10": {
+      "tiles": 3718,
+      "p95": 885,
+      "p99": 1448,
+      "max": 2214
+    },
+    "11": {
+      "tiles": 7549,
+      "p95": 924,
+      "p99": 2002,
+      "max": 3257
+    },
+    "12": {
+      "tiles": 13913,
+      "p95": 654,
+      "p99": 886,
+      "max": 1115
+    },
+    "13": {
+      "tiles": 24175,
+      "p95": 684,
+      "p99": 1091,
+      "max": 1828
+    },
+    "14": {
+      "tiles": 40919,
+      "p95": 502,
+      "p99": 609,
+      "max": 860
+    },
+    "15": {
+      "tiles": 64771,
+      "p95": 962,
+      "p99": 2609,
+      "max": 56235
+    },
+    "16": {
+      "tiles": 95665,
+      "p95": 746,
+      "p99": 1753,
+      "max": 45280
+    },
+    "17": {
+      "tiles": 133297,
+      "p95": 626,
+      "p99": 1186,
+      "max": 44403
+    },
+    "18": {
+      "tiles": 172446,
+      "p95": 556,
+      "p99": 914,
+      "max": 27905
+    }
+  },
+  "compressedOverall": {
+    "tiles": 558905,
+    "p95": 660,
+    "p99": 1332,
+    "max": 56235
+  },
+  "sampleLargestTiles": [
+    {
+      "zxy": [
+        0,
+        0,
+        0
+      ],
+      "compressedBytes": 6514,
+      "uncompressedBytes": 17635,
+      "features": 160,
+      "occurrences": 566878,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "cluster": 160
+      }
+    },
+    {
+      "zxy": [
+        1,
+        1,
+        0
+      ],
+      "compressedBytes": 6606,
+      "uncompressedBytes": 17635,
+      "features": 160,
+      "occurrences": 566878,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "cluster": 160
+      }
+    },
+    {
+      "zxy": [
+        2,
+        3,
+        1
+      ],
+      "compressedBytes": 5954,
+      "uncompressedBytes": 15481,
+      "features": 138,
+      "occurrences": 565235,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "cluster": 138
+      }
+    },
+    {
+      "zxy": [
+        3,
+        6,
+        3
+      ],
+      "compressedBytes": 18208,
+      "uncompressedBytes": 55492,
+      "features": 544,
+      "occurrences": 560155,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "cluster": 544
+      }
+    },
+    {
+      "zxy": [
+        4,
+        12,
+        6
+      ],
+      "compressedBytes": 9748,
+      "uncompressedBytes": 29998,
+      "features": 295,
+      "occurrences": 39205,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "cluster": 295
+      }
+    },
+    {
+      "zxy": [
+        5,
+        26,
+        13
+      ],
+      "compressedBytes": 19238,
+      "uncompressedBytes": 61147,
+      "features": 605,
+      "occurrences": 465529,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "cluster": 605
+      }
+    },
+    {
+      "zxy": [
+        6,
+        53,
+        26
+      ],
+      "compressedBytes": 6114,
+      "uncompressedBytes": 17497,
+      "features": 167,
+      "occurrences": 43295,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "cluster": 167
+      }
+    },
+    {
+      "zxy": [
+        7,
+        106,
+        52
+      ],
+      "compressedBytes": 8656,
+      "uncompressedBytes": 29113,
+      "features": 292,
+      "occurrences": 22811,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "cluster": 292
+      }
+    },
+    {
+      "zxy": [
+        8,
+        208,
+        111
+      ],
+      "compressedBytes": 3155,
+      "uncompressedBytes": 8838,
+      "features": 83,
+      "occurrences": 24050,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "cluster": 83
+      }
+    },
+    {
+      "zxy": [
+        9,
+        428,
+        219
+      ],
+      "compressedBytes": 6367,
+      "uncompressedBytes": 17836,
+      "features": 167,
+      "occurrences": 88786,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "cluster": 167
+      }
+    },
+    {
+      "zxy": [
+        10,
+        857,
+        438
+      ],
+      "compressedBytes": 2214,
+      "uncompressedBytes": 4848,
+      "features": 43,
+      "occurrences": 60135,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "cluster": 43
+      }
+    },
+    {
+      "zxy": [
+        11,
+        1715,
+        876
+      ],
+      "compressedBytes": 3257,
+      "uncompressedBytes": 8274,
+      "features": 73,
+      "occurrences": 41446,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "cluster": 73
+      }
+    },
+    {
+      "zxy": [
+        12,
+        3431,
+        1752
+      ],
+      "compressedBytes": 1115,
+      "uncompressedBytes": 2276,
+      "features": 20,
+      "occurrences": 9243,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "cluster": 20
+      }
+    },
+    {
+      "zxy": [
+        13,
+        6862,
+        3507
+      ],
+      "compressedBytes": 1828,
+      "uncompressedBytes": 4202,
+      "features": 43,
+      "occurrences": 6419,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "unclassified": 33,
+        "species": 10
+      }
+    },
+    {
+      "zxy": [
+        14,
+        13689,
+        7090
+      ],
+      "compressedBytes": 860,
+      "uncompressedBytes": 1674,
+      "features": 14,
+      "occurrences": 200,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "unclassified": 9,
+        "species": 5
+      }
+    },
+    {
+      "zxy": [
+        15,
+        27442,
+        14021
+      ],
+      "compressedBytes": 56235,
+      "uncompressedBytes": 291819,
+      "features": 2891,
+      "occurrences": 3613,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "coordinate": 2891
+      }
+    },
+    {
+      "zxy": [
+        16,
+        54901,
+        28046
+      ],
+      "compressedBytes": 45280,
+      "uncompressedBytes": 215507,
+      "features": 2245,
+      "occurrences": 2416,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "coordinate": 2245
+      }
+    },
+    {
+      "zxy": [
+        17,
+        109802,
+        56093
+      ],
+      "compressedBytes": 44403,
+      "uncompressedBytes": 208113,
+      "features": 2171,
+      "occurrences": 2333,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "coordinate": 2171
+      }
+    },
+    {
+      "zxy": [
+        18,
+        219605,
+        112187
+      ],
+      "compressedBytes": 27905,
+      "uncompressedBytes": 125209,
+      "features": 1298,
+      "occurrences": 1405,
+      "badRevisionOrSchema": 0,
+      "kinds": {
+        "coordinate": 1298
+      }
+    }
+  ],
+  "exportByKind": {
+    "cluster": {
+      "features": 68950,
+      "occurrences": 3401268
+    },
+    "species": {
+      "features": 877,
+      "occurrences": 1342
+    },
+    "unclassified": {
+      "features": 72669,
+      "occurrences": 565536
+    },
+    "coordinate": {
+      "features": 346998,
+      "occurrences": 566878
+    }
+  },
+  "exportByResolution": {
+    "2": {
+      "features": 160,
+      "occurrences": 566878
+    },
+    "3": {
+      "features": 764,
+      "occurrences": 566878
+    },
+    "4": {
+      "features": 2943,
+      "occurrences": 566878
+    },
+    "5": {
+      "features": 7926,
+      "occurrences": 566878
+    },
+    "6": {
+      "features": 18264,
+      "occurrences": 566878
+    },
+    "7": {
+      "features": 38893,
+      "occurrences": 566878
+    },
+    "8": {
+      "features": 420544,
+      "occurrences": 1133756
+    }
+  },
+  "capacityPassed": true
+}

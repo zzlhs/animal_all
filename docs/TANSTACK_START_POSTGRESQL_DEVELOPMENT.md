@@ -1,5 +1,7 @@
 # 十万至百万级 GBIF 地球仪：TanStack Start + PostgreSQL 开发与迁移文档
 
+> 2026-10-06 实现状态：旧 Vue/Fastify 目录已移除，唯一应用为 `apps/web`。已用用户真实 ZIP 导入 572,391 条动物观测并执行对账、发布、热点分页和并发测试；整体验收未通过，详见[真实数据验收报告](./GBIF_REAL_DATA_ACCEPTANCE_20261006.md)。第 2 节保留迁移前的历史基线；百万级、完整详情 SSR 数据预取等仍按本文规范验收。当前操作入口见 [开发手册](./DEVELOPMENT.md)。
+
 > 编写日期：2026-09-28。依据当前工作区实现及 `TECHNICAL_DESIGN.md`、`DEVELOPMENT.md` 编写。
 > 状态：待实施的开发方案。本文件不表示框架迁移、数据库迁移或百万级性能验证已经完成。
 > 技术选择：TanStack Start（React）+ TypeScript + TanStack Query + PostgreSQL/PostGIS + H3 + PMTiles + MapLibre GL JS。
@@ -188,8 +190,8 @@ infra/
   Dockerfile.web
   Dockerfile.worker
 docs/
-frontend/                      # 迁移期保留旧前端作为回归参照
-backend/                       # 迁移期保留旧 HTTP 入口和 CLI
+data/sample/                   # 原版记录，只供数据库种子导入
+scripts/                       # 配置加载和 ZIP → PG → 地图发布 CLI
 ```
 
 这是目标结构，当前仓库尚无这些 `apps/`、`packages/` 目录。初期可先新增 `apps/web`，待服务抽取验证后再移动数据管道。每次移动保持 CLI 和测试可运行。
@@ -845,7 +847,7 @@ M2～M4 期间新前端可暂时调用旧 Fastify，先验证交互；M5 完成�
 - [ ] 加入瓦片容量检查与极区覆盖报告。
 - [ ] 跑通百万级完整导入—发布—浏览—回滚链路。
 - [ ] 更新 DEVELOPMENT、TECHNICAL_DESIGN 和部署说明。
-- [ ] 通过验收后移除旧 Vue/Fastify HTTP 入口及重复代理代码。
+- [x] 旧 Vue/Fastify HTTP 入口及重复代理代码已移除（功能验证见修复记录，容量验收另行执行）。
 
 ### 13.4 目标开发命令契约
 
@@ -938,22 +940,22 @@ npm run release:publish --workspace apps/worker -- --manifest /path/release.json
 
 - [原技术设计](./TECHNICAL_DESIGN.md)
 - [现有开发手册](./DEVELOPMENT.md)
-- [前端依赖](../frontend/package.json) / [后端依赖](../backend/package.json)
-- [页面入口](../frontend/src/App.vue)
-- [地图实例与球面投影](../frontend/src/components/MapProvider.vue)
-- [大数据矢量图层](../frontend/src/components/ScalableOccurrenceLayer.vue)
-- [API 客户端](../frontend/src/services/occurrenceApi.js)
-- [全局音频状态](../frontend/src/composables/useGlobalAudioPlayer.js)
-- [音频缓存配置](../frontend/src/media/audioCache.constants.js)
-- [服务端路由](../backend/src/routes/occurrence.routes.ts)
-- [查询服务](../backend/src/services/occurrence.service.ts)
-- [连接池与读事务](../backend/src/db/pool.ts)
-- [迁移执行器](../backend/src/db/migrate.ts)
-- [聚合逻辑](../backend/src/import/rebuild-aggregates.ts)
-- [瓦片特征导出](../backend/src/map/export-map-features.ts)
-- [数据库初始模型](../backend/migrations/001_initial.sql)
-- [坐标索引](../backend/migrations/005_exact_coordinate_lookup.sql)
-- [版本 revision 与退役状态](../backend/migrations/006_dataset_promotion.sql)
+- [前端依赖](../apps/web/package.json) / [后端依赖](../apps/worker/package.json)
+- [页面入口](../apps/web/src/routes/index.tsx)
+- [地图实例与球面投影](../apps/web/src/features/globe/MapCanvas.tsx)
+- [大数据矢量图层](../apps/web/src/features/globe/MapCanvas.tsx)
+- [API 客户端](../apps/web/src/queries/occurrenceQueries.ts)
+- [全局音频状态](../apps/web/src/features/media/AudioContext.tsx)
+- [音频缓存配置](../packages/contracts/src/constants.ts)
+- [服务端路由](../apps/web/src/server/occurrence.server.ts)
+- [查询服务](../packages/domain/src/OccurrenceService.ts)
+- [连接池与读事务](../packages/db/src/pool.ts)
+- [迁移执行器](../packages/db/src/migrate.ts)
+- [聚合逻辑](../apps/worker/src/import/rebuild-aggregates.ts)
+- [瓦片特征导出](../apps/worker/src/map/export-map-features.ts)
+- [数据库初始模型](../packages/db/migrations/001_initial.sql)
+- [坐标索引](../packages/db/migrations/005_exact_coordinate_lookup.sql)
+- [版本 revision 与退役状态](../packages/db/migrations/006_dataset_promotion.sql)
 
 ### 16.2 官方资料
 

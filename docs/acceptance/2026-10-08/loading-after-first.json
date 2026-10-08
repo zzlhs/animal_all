@@ -1,0 +1,513 @@
+{
+  "measuredAt": "2026-10-08T01:00:35.683Z",
+  "base": "http://127.0.0.1:4318",
+  "reports": [
+    {
+      "cache": "cold",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "sampleDurationMs": 30000,
+      "firstMarkerMs": null,
+      "firstImageMs": null,
+      "marks": {},
+      "domMarkers": 0,
+      "images": [],
+      "navigation": {
+        "name": "http://127.0.0.1:4318/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 507.8000000715256,
+        "navigationId": 754,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.5,
+        "domainLookupStart": 0.5,
+        "domainLookupEnd": 0.5,
+        "connectStart": 0.5,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.5,
+        "requestStart": 1.7000000476837158,
+        "responseStart": 436,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 436,
+        "responseEnd": 439,
+        "transferSize": 6910,
+        "encodedBodySize": 6610,
+        "decodedBodySize": 6610,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 478.40000009536743,
+        "domContentLoadedEventStart": 478.40000009536743,
+        "domContentLoadedEventEnd": 478.40000009536743,
+        "domComplete": 507.8000000715256,
+        "loadEventStart": 507.8000000715256,
+        "loadEventEnd": 507.8000000715256,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "detailMs": null,
+      "transferredBytes": 518230,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4318/",
+          "start": 782087.826376,
+          "type": "Document",
+          "status": 200,
+          "mime": "text/html",
+          "diskCache": false,
+          "headers": {
+            "Connection": "keep-alive",
+            "Date": "Thu, 08 Oct 2026 00:59:35 GMT",
+            "Keep-Alive": "timeout=5",
+            "Transfer-Encoding": "chunked",
+            "content-type": "text/html; charset=utf-8"
+          },
+          "durationMs": 438,
+          "transferredBytes": 6806
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/index-D5fWwQrg.css",
+          "start": 782088.269685,
+          "type": "Stylesheet",
+          "status": 200,
+          "mime": "text/css",
+          "diskCache": false,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"422e-1a116dfb5c2-br\"",
+            "Connection": "keep-alive",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "16942",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 00:59:35 GMT",
+            "Content-Type": "text/css",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 9,
+          "transferredBytes": 17273
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/OccurrenceCard-mqhCqNQY.js",
+          "start": 782088.271446,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": false,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"2e13-1a116dfb5aa-br\"",
+            "Connection": "keep-alive",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "11795",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 00:59:35 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 10,
+          "transferredBytes": 12133
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/index-yESh5wDO.js",
+          "start": 782088.271411,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": false,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"1379d-1a116dfb5d8-br\"",
+            "Connection": "keep-alive",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "79773",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 00:59:35 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 11,
+          "transferredBytes": 80112
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/index-CzcDvmzX.js",
+          "start": 782088.271347,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": false,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"216a4-1a116dfb5bf-br\"",
+            "Connection": "keep-alive",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "136868",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 00:59:35 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 9,
+          "transferredBytes": 137208
+        },
+        {
+          "url": "http://127.0.0.1:4318/favicon.ico",
+          "start": 782088.345333,
+          "type": "Other",
+          "status": 404,
+          "mime": "text/html",
+          "diskCache": false,
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 00:59:35 GMT",
+            "content-type": "text/html; charset=utf-8",
+            "Connection": "keep-alive"
+          },
+          "durationMs": 8,
+          "transferredBytes": 1775
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/maplibre-gl-C1olziTv.js",
+          "start": 782088.353304,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": false,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"3e1ac-1a116dfb604-br\"",
+            "Connection": "keep-alive",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "254380",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 00:59:35 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 7,
+          "transferredBytes": 254720
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/index-_p4Zo1ve.js",
+          "start": 782088.390664,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": false,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"1c42-1a116dfb5c3-br\"",
+            "Connection": "keep-alive",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "7234",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 00:59:35 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 3,
+          "transferredBytes": 7571
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/v1/meta",
+          "start": 782088.356256,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/json",
+          "diskCache": false,
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "cache-control": "no-cache",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 00:59:35 GMT",
+            "content-type": "application/json",
+            "Connection": "keep-alive"
+          },
+          "durationMs": 44,
+          "transferredBytes": 632
+        }
+      ],
+      "pending": [
+        {
+          "url": "blob:http://127.0.0.1:4318/598d8f91-7ee0-4048-9ad7-d6a33b544da6",
+          "start": 782088.431077,
+          "type": "Script"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "cache": "warm",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "sampleDurationMs": 30000,
+      "firstMarkerMs": null,
+      "firstImageMs": null,
+      "marks": {},
+      "domMarkers": 0,
+      "images": [],
+      "navigation": {
+        "name": "http://127.0.0.1:4318/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 68,
+        "navigationId": 7310,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 3.5,
+        "domainLookupStart": 3.5,
+        "domainLookupEnd": 3.5,
+        "connectStart": 3.5,
+        "secureConnectionStart": 0,
+        "connectEnd": 3.5,
+        "requestStart": 4.400000095367432,
+        "responseStart": 15.700000047683716,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 15.700000047683716,
+        "responseEnd": 16.300000071525574,
+        "transferSize": 6910,
+        "encodedBodySize": 6610,
+        "decodedBodySize": 6610,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 26.40000009536743,
+        "domContentLoadedEventStart": 26.40000009536743,
+        "domContentLoadedEventEnd": 26.40000009536743,
+        "domComplete": 68,
+        "loadEventStart": 68,
+        "loadEventEnd": 68,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "detailMs": null,
+      "transferredBytes": 7438,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4318/assets/index-D5fWwQrg.css",
+          "start": 782118.149724,
+          "type": "Stylesheet",
+          "status": 200,
+          "mime": "text/css",
+          "diskCache": true,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"422e-1a116dfb5c2-br\"",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "16942",
+            "Date": "Thu, 08 Oct 2026 00:59:35 GMT",
+            "Content-Type": "text/css",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 1,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/",
+          "start": 782118.131782,
+          "type": "Document",
+          "status": 200,
+          "mime": "text/html",
+          "diskCache": false,
+          "headers": {
+            "Connection": "keep-alive",
+            "Date": "Thu, 08 Oct 2026 01:00:05 GMT",
+            "Keep-Alive": "timeout=5",
+            "Transfer-Encoding": "chunked",
+            "content-type": "text/html; charset=utf-8"
+          },
+          "durationMs": 13,
+          "transferredBytes": 6806
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/OccurrenceCard-mqhCqNQY.js",
+          "start": 782118.150087,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": true,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"2e13-1a116dfb5aa-br\"",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "11795",
+            "Date": "Thu, 08 Oct 2026 00:59:35 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 4,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/index-yESh5wDO.js",
+          "start": 782118.150052,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": true,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"1379d-1a116dfb5d8-br\"",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "79773",
+            "Date": "Thu, 08 Oct 2026 00:59:35 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 4,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/index-CzcDvmzX.js",
+          "start": 782118.149983,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": true,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"216a4-1a116dfb5bf-br\"",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "136868",
+            "Date": "Thu, 08 Oct 2026 00:59:35 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 3,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/api/v1/meta",
+          "start": 782118.21104,
+          "type": "Fetch",
+          "status": 200,
+          "mime": "application/json",
+          "diskCache": false,
+          "headers": {
+            "Transfer-Encoding": "chunked",
+            "cache-control": "no-cache",
+            "Keep-Alive": "timeout=5",
+            "Date": "Thu, 08 Oct 2026 01:00:05 GMT",
+            "content-type": "application/json",
+            "Connection": "keep-alive"
+          },
+          "durationMs": 10,
+          "transferredBytes": 632
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/maplibre-gl-C1olziTv.js",
+          "start": 782118.20919,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": true,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"3e1ac-1a116dfb604-br\"",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "254380",
+            "Date": "Thu, 08 Oct 2026 00:59:35 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 4,
+          "transferredBytes": 0
+        },
+        {
+          "url": "http://127.0.0.1:4318/assets/index-_p4Zo1ve.js",
+          "start": 782118.236711,
+          "type": "Script",
+          "status": 200,
+          "mime": "text/javascript",
+          "diskCache": true,
+          "headers": {
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Content-Encoding": "br",
+            "ETag": "\"1c42-1a116dfb5c3-br\"",
+            "X-Content-Type-Options": "nosniff",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "7234",
+            "Date": "Thu, 08 Oct 2026 00:59:35 GMT",
+            "Content-Type": "text/javascript",
+            "Vary": "Accept-Encoding"
+          },
+          "durationMs": 0,
+          "transferredBytes": 0
+        }
+      ],
+      "pending": [
+        {
+          "url": "blob:http://127.0.0.1:4318/e0b5857f-e71c-4546-99b0-6049aaaa88d9",
+          "start": 782118.270892,
+          "type": "Script"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

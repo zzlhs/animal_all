@@ -1,0 +1,35 @@
+{
+  "head": {
+    "status": 200,
+    "contentLength": "254634690",
+    "contentRange": null,
+    "cacheControl": "public, max-age=31536000, immutable",
+    "cors": "*",
+    "bytes": 0
+  },
+  "header": {
+    "status": 206,
+    "contentLength": "127",
+    "contentRange": "bytes 0-126/254634690",
+    "cacheControl": "public, max-age=31536000, immutable",
+    "cors": "*",
+    "bytes": 127,
+    "magic": "PMTiles"
+  },
+  "suffix": {
+    "status": 206,
+    "contentLength": "127",
+    "contentRange": "bytes 254634563-254634689/254634690",
+    "cacheControl": "public, max-age=31536000, immutable",
+    "cors": "*",
+    "bytes": 127
+  },
+  "invalid": {
+    "status": 416,
+    "contentLength": null,
+    "contentRange": "bytes */254634690",
+    "cacheControl": null,
+    "cors": null,
+    "bytes": 0
+  }
+}

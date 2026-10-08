@@ -1,0 +1,81 @@
+{
+  "before": {
+    "dataset": {
+      "id": "3",
+      "version": "gbif-0038781-20261006",
+      "revision": "1e6c848e-3677-4a48-845c-90fd4ff82cf9",
+      "status": "ready",
+      "occurrenceCount": 572391,
+      "plottableCount": 566878,
+      "filterCounts": {
+        "all": 566878,
+        "Aves": 247338,
+        "Insecta": 214323,
+        "audio": 7669
+      }
+    },
+    "map": {
+      "releaseId": "4",
+      "featureSchemaVersion": 2,
+      "pmtilesUrl": "http://127.0.0.1:4319/api/maps/1e6c848e-3677-4a48-845c-90fd4ff82cf9.pmtiles",
+      "sourceLayer": "gbif_occurrences",
+      "maxZoom": 18
+    }
+  },
+  "old": {
+    "dataset": {
+      "id": "2",
+      "version": "sample-120-restored",
+      "revision": "b1532e0f-c3e5-414d-92d4-cd9e64ccf6a2",
+      "status": "ready",
+      "occurrenceCount": 120,
+      "plottableCount": 115,
+      "mapCamera": {
+        "zoom": 1.9,
+        "center": [
+          1.0407500000000027,
+          52.46685
+        ]
+      },
+      "filterCounts": {
+        "all": 115,
+        "Aves": 22,
+        "Insecta": 20,
+        "audio": 20
+      }
+    },
+    "map": {
+      "releaseId": "3",
+      "featureSchemaVersion": 2,
+      "pmtilesUrl": "http://127.0.0.1:4319/api/maps/b1532e0f-c3e5-414d-92d4-cd9e64ccf6a2.pmtiles",
+      "sourceLayer": "gbif_occurrences",
+      "maxZoom": 18
+    }
+  },
+  "oldRangeStatus": 206,
+  "oldDetailStatus": 200,
+  "restored": {
+    "dataset": {
+      "id": "3",
+      "version": "gbif-0038781-20261006",
+      "revision": "1e6c848e-3677-4a48-845c-90fd4ff82cf9",
+      "status": "ready",
+      "occurrenceCount": 572391,
+      "plottableCount": 566878,
+      "filterCounts": {
+        "all": 566878,
+        "Aves": 247338,
+        "Insecta": 214323,
+        "audio": 7669
+      }
+    },
+    "map": {
+      "releaseId": "4",
+      "featureSchemaVersion": 2,
+      "pmtilesUrl": "http://127.0.0.1:4319/api/maps/1e6c848e-3677-4a48-845c-90fd4ff82cf9.pmtiles",
+      "sourceLayer": "gbif_occurrences",
+      "maxZoom": 18
+    }
+  },
+  "passed": true
+}

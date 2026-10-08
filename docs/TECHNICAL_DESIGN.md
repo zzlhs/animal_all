@@ -8,7 +8,7 @@
 2. 同一物种在不同地点的分布不能因“按名字去重”而丢失。
 3. 点必须绑定真实经纬度并交给地图 WebGL 投影；旋转和缩放时不会像手工 DOM 坐标那样漂移。
 
-项目保留 `sample` 模式用于 115 个可绘制样例点；生产使用 `api` 模式。
+样例与真实数据统一从 PostgreSQL 读取；原版 120 条样例记录保存在 `data/sample`，仅用于数据库初始化。前端入口统一为 TanStack Start。
 
 ## 2. 总体架构
 
@@ -16,7 +16,7 @@
 GBIF DWCA.zip
       │ 读取 meta.xml，流式读取 core / 可选 multimedia extension
       ▼
-Node.js 20 离线导入任务 ── H3 r2…r8
+Node.js 22 离线导入任务 ── H3 r2…r8
       │
       ▼
 PostgreSQL + PostGIS
@@ -26,11 +26,11 @@ PostgreSQL + PostGIS
       │                                  │
       │ API 按需分页查询                  │ NDJSON → Tippecanoe → PMTiles
       ▼                                  ▼
-Fastify API                         对象存储/CDN
+TanStack Start Server Routes                         对象存储/CDN
       │                                  │
       └──────────────┬───────────────────┘
                      ▼
-          Vue + MapLibre/Mapbox WebGL
+          React + MapLibre WebGL
                      │
           ImageKit/原始 CDN 媒体 URL
 ```
@@ -41,7 +41,7 @@ PMTiles 是静态地图索引，适合放在支持 HTTP Range 请求和 CORS 的
 
 ### `datasets`
 
-每次导入创建独立 version 和不可重复 revision。`ACTIVE_DATASET_VERSION` 决定 API 当前读取哪个版本，因此可以先离线导入新版本、验证后再切换，旧版本可用于回滚。同名 `--replace` 使用暂存版本和 PostgreSQL advisory lock，聚合成功后在同一事务中发布共享物种分类、退役旧数据并提升新数据；失败不会删除或提前改变旧版本。
+每次导入创建独立 version 和不可重复 revision。Web 按 `active_map_release` 指针读取已验证的地图发布，`ACTIVE_DATASET_VERSION` 只作为低级 Worker 命令的默认版本名。导入、聚合、瓦片构建和远端校验完成后，发布事务才切换活动指针；失败不会提前改变当前页面数据。已发布版本保持快照，旧 release 可以回滚。
 
 ### `species`
 
@@ -72,7 +72,7 @@ PMTiles 是静态地图索引，适合放在支持 HTTP Range 请求和 CORS 的
 
 ## 4. 地图渲染与交互
 
-前端的 `ScalableOccurrenceLayer` 使用 MapLibre/Mapbox 原生 vector source 和 circle/symbol layer。经纬度进入矢量瓦片后由地图引擎统一完成球面投影，所以同一特征在旋转、倾斜和连续缩放时保持在地理位置上。
+前端 `MapCanvas` 使用 MapLibre 原生 vector source 和 circle/symbol layer。经纬度进入矢量瓦片后由地图引擎统一完成球面投影，所以同一特征在旋转、倾斜和连续缩放时保持在地理位置上。
 
 缩放级别与数据层级：
 
@@ -102,7 +102,7 @@ PMTiles 是静态地图索引，适合放在支持 HTTP Range 请求和 CORS 的
 
 | 方法 | 路径 | 用途 |
 |---|---|---|
-| GET | `/api/health` | Node 和数据库健康检查 |
+| GET | `/api/health` | Node 进程存活 |
 | GET | `/api/v1/meta` | 当前数据版本、记录数、PMTiles 配置 |
 | GET | `/api/v1/occurrences/:gbifId` | 一条 occurrence 及其媒体 |
 | GET | `/api/v1/cells/:resolution/:cellId/occurrences` | 网格内 occurrence 游标分页，可带 `speciesKey` |
@@ -110,7 +110,7 @@ PMTiles 是静态地图索引，适合放在支持 HTTP Range 请求和 CORS 的
 | GET | `/api/v1/coordinates/:lat/:lng/occurrences` | 高缩放同一精确坐标内的 occurrence 分页 |
 | GET/HEAD | `/api/audio-proxy?url=…` | 仅代理允许域名且 MIME 确认为音频的响应，并保留 Range |
 
-API 校验 H3 分辨率与 cell ID，限制最大分页大小，启用 CORS、Helmet 和速率限制。数据库查询参数化，不拼接用户值；只有受控的 H3 列名来自常量映射。
+API 校验 H3 分辨率与 cell ID，限制最大分页大小。PMTiles 文件响应提供跨域和 Range 支持；Web 与业务 API 默认同源。数据库查询参数化，不拼接用户值；只有受控的 H3 列名来自常量映射。
 
 ## 6. 复杂度和容量
 
@@ -132,9 +132,9 @@ API 校验 H3 分辨率与 cell ID，限制最大分页大小，启用 CORS、He
 1. 导入新版本并生成聚合；
 2. 生成带版本名的 PMTiles，例如 `gbif-dwca-2026-08-27.pmtiles`；
 3. 上传并验证 Range/CORS；
-4. 更新后端 `ACTIVE_DATASET_VERSION` 和 `PMTILES_URL`；
+4. 使用 release manifest 验证后在事务中切换 `active_map_release`；
 5. 重启 API；
-6. 需要回滚时恢复旧版本配置。
+6. 需要回滚时使用 `release:rollback -- --release-id=<旧 release ID>`。
 
 PMTiles 文件名带版本后可以使用长缓存；`/api/v1/meta` 和详情接口使用较短缓存或由反向代理按业务要求配置。
 每个 PMTiles 特征还保存 dataset version 和 revision。前端在请求详情前与 `/api/v1/meta` 同时核对两项，因此同名版本被重建时也不会把旧瓦片坐标连接到新数据库记录。
@@ -152,8 +152,29 @@ ImageKit 同步不是一次性游标扫描，而是持久队列：任务以原�
 
 PMTiles 使用 S3 兼容接口分片上传，上传后用 `HeadObject` 校验对象长度。公开地址必须支持 CORS、`HEAD` 和 HTTP Range。Cloudflare R2 的 S3 兼容端点可直接使用，但公开域名和 S3 API 端点不是同一个概念。
 
-项目中的 Sites 配置只适合静态前端和现有轻量 Worker，前端构建使用 Node.js 22.13 与标准 Sites Vite 插件。Node.js 20 API 与 PostgreSQL/PostGIS 必须独立运行；构建命令不会自动部署，也不会自动上传对象。
+Web 使用 Node.js 22 的 Start HTTP 服务；PG 和离线 Worker 独立运行。部署配置位于 `infra`，Web 可挂载本地 PMTiles 目录，也可从已发布 CDN 地址读取。构建命令不会自动部署或上传对象。
 
 ## 10. 中英文数据边界
 
 界面文本、日期、国家名和底图标签支持中英文切换。DWCA 中若有 `vernacularName`、`country`、`language` 会保留并由 API 返回；科学名始终保留原文。`locality/stateProvince` 属于数据提供者的自由文本，项目不会臆造机器翻译，因此源数据只有一种语言时，该字段仍显示源语言。若生产需求要求完整双语地名或物种俗名，应在离线导入阶段接入受控词表并保存译文，而不是在浏览器临时翻译。
+
+## 11. TanStack Start 迁移状态
+
+唯一 Web 入口位于 `apps/web`，共享查询与发布服务位于 `packages/`，数据任务位于 `apps/worker`；旧 Vue/Fastify 目录已删除。新应用已接入 PMTiles 图层、筛选和游标分页，服务端按已发布 revision 读取。
+
+新增迁移 007、008 引入发布指针及记录级媒体字段；worker 聚合负责持续写入，008 对旧数据回填。发布 CLI 强制核验 manifest、本地与远端内容哈希、HTTP Range/CORS 和抽样瓦片 revision，完成后事务切换活动指针。
+
+实现与测试边界、启动和发布命令见 [开发手册第 10 章](./DEVELOPMENT.md)。首屏为 SSR 页面壳；百万级容量、手机帧率、完整 SSR 数据预取和生产运维验收尚需独立验证，不能将目录拆分或构建成功视为全部架构目标已验收。
+
+
+## 12. 照片标记与声景迁移
+
+不超过 160 个可定位点的数据集由 PG 返回有界记录集合，使用原版邻近聚合和照片组件。大量记录仍通过 PMTiles 绘制；当前视野特征较少时批量读取代表记录生成图片/音频/数字标记，较密集时保留 WebGL 绘制。DOM 标记由 MapLibre 投影并隐藏球背面的标记。播放光波同时支持单条点和包含播放记录的聚合点。
+
+音频使用统一 Start 代理和浏览器缓存。播放成功才更新播放状态；失败显示提示；切换来源取消等待中的请求。声景支持单段、2–4 段混音、音量、暂停恢复及倒计时循环，和观测录音互斥。
+
+## 13. 自动导入脚本
+
+`npm run data:setup -- --archive /absolute/path/gbif.zip --version unique-version` 完成迁移、流式解压入库、H3 聚合、PG 导出、Docker 瓦片构建、HTTP/哈希校验与发布。样例使用 `--sample`。启动与数据任务的根命令统一读取 `.env` 和 `.env.local`；本地瓦片服务支持 HEAD、Range、206/416。
+
+实际运行步骤见 [数据库导入指南](./LOCAL_DATABASE_AND_GBIF_IMPORT.md)。已验证 120 条原版记录和小型 DWCA 包；十万/百万性能指标仍需真实数据验证。

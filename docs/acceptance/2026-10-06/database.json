@@ -1,0 +1,928 @@
+{
+  "date": "2026-10-06",
+  "source": {
+    "archive": "/Users/zhengyuan/Downloads/0038781-260806074905277.zip",
+    "archiveBytes": 488539479,
+    "uncompressedBytes": 2349827362,
+    "occurrenceRows": 914853,
+    "selectedRows": 572391,
+    "duplicateSelectedIds": 0,
+    "kingdomRows": {
+      "Animalia": 572391,
+      "Fungi": 12403,
+      "Plantae": 311781,
+      "": 951,
+      "Chromista": 3345,
+      "Bacillati": 6481,
+      "Protozoa": 441,
+      "Pseudomonadati": 5281,
+      "Orthornavirae": 1251,
+      "Shotokuvirae": 215,
+      "Pararnavirae": 142,
+      "Bamfordvirae": 26,
+      "Heunggongvirae": 24,
+      "Fusobacteriati": 8,
+      "Methanobacteriati": 109,
+      "Thermoproteati": 2,
+      "Thermotogati": 2
+    },
+    "uniqueSelectedOccurrences": 572391,
+    "plottable": 566878,
+    "aves": 247338,
+    "insecta": 214323,
+    "species": 87,
+    "sourceSpecies": 17949,
+    "nonNumericSpeciesOccurrences": 543262,
+    "missingSpeciesOccurrences": 27782,
+    "mediaSections": [
+      "multimedia.txt",
+      "verbatim/multimedia.txt",
+      "verbatim/audubon.txt"
+    ],
+    "mediaRows": 1290999,
+    "validMediaRows": 1290999,
+    "unmatchedMediaRows": 537165,
+    "uniqueLinkedMedia": 753834,
+    "mediaTypes": {
+      "image": 745692,
+      "audio": 8067
+    },
+    "audioOccurrences": 7742,
+    "plottableAudioOccurrences": 7669,
+    "imageOccurrences": 438438,
+    "samples": [
+      {
+        "gbifID": "6360481313",
+        "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+        "decimalLatitude": "22.479331",
+        "decimalLongitude": "114.355097",
+        "class": "Polychaeta"
+      },
+      {
+        "gbifID": "6360482327",
+        "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+        "decimalLatitude": "22.479331",
+        "decimalLongitude": "114.355097",
+        "class": "Polychaeta"
+      },
+      {
+        "gbifID": "6360482334",
+        "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+        "decimalLatitude": "22.479331",
+        "decimalLongitude": "114.355097",
+        "class": "Polychaeta"
+      },
+      {
+        "gbifID": "6360483301",
+        "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+        "decimalLatitude": "22.35083",
+        "decimalLongitude": "114.05505",
+        "class": "Polychaeta"
+      },
+      {
+        "gbifID": "6360483303",
+        "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+        "decimalLatitude": "22.479331",
+        "decimalLongitude": "114.355097",
+        "class": "Polychaeta"
+      },
+      {
+        "gbifID": "6360483317",
+        "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+        "decimalLatitude": "22.35083",
+        "decimalLongitude": "114.05505",
+        "class": "Polychaeta"
+      },
+      {
+        "gbifID": "6360484304",
+        "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+        "decimalLatitude": "22.479331",
+        "decimalLongitude": "114.355097",
+        "class": "Polychaeta"
+      },
+      {
+        "gbifID": "6360484314",
+        "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+        "decimalLatitude": "22.35083",
+        "decimalLongitude": "114.05505",
+        "class": "Polychaeta"
+      },
+      {
+        "gbifID": "6360484324",
+        "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+        "decimalLatitude": "22.479331",
+        "decimalLongitude": "114.355097",
+        "class": "Polychaeta"
+      },
+      {
+        "gbifID": "6360485324",
+        "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+        "decimalLatitude": "22.479331",
+        "decimalLongitude": "114.355097",
+        "class": "Polychaeta"
+      },
+      {
+        "gbifID": "6360481319",
+        "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+        "decimalLatitude": "22.479331",
+        "decimalLongitude": "114.355097",
+        "class": "Polychaeta"
+      },
+      {
+        "gbifID": "6360482339",
+        "scientificName": "Hydroides elegans (Haswell, 1883) [nomen protectum]",
+        "decimalLatitude": "22.479331",
+        "decimalLongitude": "114.355097",
+        "class": "Polychaeta"
+      }
+    ],
+    "archiveSha256": "b03957f5a57299f804d81ae8b480979343d1ff69920625b0d0a57684b5fb668d",
+    "auditSeconds": 39.94
+  },
+  "environment": {
+    "node": "v22.23.2",
+    "platform": "darwin",
+    "arch": "arm64",
+    "cpu": "Apple M1 Pro",
+    "logicalCpus": 10,
+    "memoryBytes": 34359738368
+  },
+  "dataset": {
+    "id": "3",
+    "version": "gbif-0038781-20261006",
+    "source_archive": "0038781-260806074905277.zip",
+    "kingdom_filter": "Animalia",
+    "status": "ready",
+    "occurrence_count": "572391",
+    "plottable_count": "566878",
+    "species_count": "87",
+    "media_count": "753834",
+    "aves_count": "247338",
+    "insecta_count": "214323",
+    "audio_occurrence_count": "7669",
+    "import_stats": {
+      "scannedMedia": 1290999,
+      "importedMedia": 753834,
+      "scannedOccurrences": 914853,
+      "importedOccurrences": 572391,
+      "selectedOccurrences": 572391
+    },
+    "created_at": "2026-10-06T08:56:25.853Z",
+    "updated_at": "2026-10-06T09:00:28.404Z",
+    "retired_at": null,
+    "revision": "1e6c848e-3677-4a48-845c-90fd4ff82cf9"
+  },
+  "databaseVersion": {
+    "version": "PostgreSQL 18.3 (Debian 18.3-1.pgdg12+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit",
+    "postgis_full_version": "POSTGIS=\"3.6.3 3d12666\" [EXTENSION] PGSQL=\"180\" GEOS=\"3.11.1-CAPI-1.17.1\" PROJ=\"9.1.1 NETWORK_ENABLED=OFF URL_ENDPOINT=https://cdn.proj.org USER_WRITABLE_DIRECTORY=/var/lib/postgresql/.local/share/proj DATABASE_PATH=/usr/share/proj/proj.db\" (compiled against PROJ 9.1.1) LIBXML=\"2.9.14\" LIBJSON=\"0.16\" LIBPROTOBUF=\"1.4.1\" WAGYU=\"0.5.0 (Internal)\""
+  },
+  "actual": {
+    "occurrences": 572391,
+    "plottable": 566878,
+    "aves": 247338,
+    "insecta": 214323,
+    "audio": 7669,
+    "species": 87,
+    "unknownspecies": 571044,
+    "polarrecords": 0,
+    "media": 753834
+  },
+  "countChecks": {
+    "occurrences": {
+      "expected": 572391,
+      "actual": 572391,
+      "passed": true
+    },
+    "plottable": {
+      "expected": 566878,
+      "actual": 566878,
+      "passed": true
+    },
+    "aves": {
+      "expected": 247338,
+      "actual": 247338,
+      "passed": true
+    },
+    "insecta": {
+      "expected": 214323,
+      "actual": 214323,
+      "passed": true
+    },
+    "audio": {
+      "expected": 7669,
+      "actual": 7669,
+      "passed": true
+    },
+    "media": {
+      "expected": 753834,
+      "actual": 753834,
+      "passed": true
+    }
+  },
+  "speciesCheck": {
+    "expected": 17949,
+    "actual": 87,
+    "passed": false,
+    "nonNumericSourceOccurrences": 543262
+  },
+  "idCheck": {
+    "sourceSha256": "aaf5d37f32e04e84f251be07cf3632ba7de3210fb59b7d719585212cd7c614cb",
+    "databaseSha256": "aaf5d37f32e04e84f251be07cf3632ba7de3210fb59b7d719585212cd7c614cb",
+    "databaseRows": 572391,
+    "passed": true
+  },
+  "mapAggregates": [
+    {
+      "resolution": 2,
+      "cells": 160,
+      "occurrences": "566878",
+      "aves": "247338",
+      "insecta": "214323",
+      "audio": "7669"
+    },
+    {
+      "resolution": 3,
+      "cells": 764,
+      "occurrences": "566878",
+      "aves": "247338",
+      "insecta": "214323",
+      "audio": "7669"
+    },
+    {
+      "resolution": 4,
+      "cells": 2943,
+      "occurrences": "566878",
+      "aves": "247338",
+      "insecta": "214323",
+      "audio": "7669"
+    },
+    {
+      "resolution": 5,
+      "cells": 7926,
+      "occurrences": "566878",
+      "aves": "247338",
+      "insecta": "214323",
+      "audio": "7669"
+    },
+    {
+      "resolution": 6,
+      "cells": 18264,
+      "occurrences": "566878",
+      "aves": "247338",
+      "insecta": "214323",
+      "audio": "7669"
+    },
+    {
+      "resolution": 7,
+      "cells": 38893,
+      "occurrences": "566878",
+      "aves": "247338",
+      "insecta": "214323",
+      "audio": "7669"
+    }
+  ],
+  "hotCells": [
+    {
+      "resolution": 2,
+      "cell_id": "824ba7fffffffff",
+      "occurrence_count": 184790,
+      "aves_count": 58502,
+      "insecta_count": 81953,
+      "audio_occurrence_count": 1640
+    },
+    {
+      "resolution": 2,
+      "cell_id": "82411ffffffffff",
+      "occurrence_count": 86171,
+      "aves_count": 26222,
+      "insecta_count": 44664,
+      "audio_occurrence_count": 530
+    },
+    {
+      "resolution": 2,
+      "cell_id": "824b87fffffffff",
+      "occurrence_count": 73381,
+      "aves_count": 61912,
+      "insecta_count": 7248,
+      "audio_occurrence_count": 72
+    },
+    {
+      "resolution": 2,
+      "cell_id": "824bb7fffffffff",
+      "occurrence_count": 32701,
+      "aves_count": 18987,
+      "insecta_count": 7357,
+      "audio_occurrence_count": 171
+    }
+  ],
+  "hotCoordinates": [
+    {
+      "decimal_latitude": 22.675,
+      "decimal_longitude": 121.469,
+      "records": 19102
+    },
+    {
+      "decimal_latitude": 22.666,
+      "decimal_longitude": 121.508,
+      "records": 19018
+    },
+    {
+      "decimal_latitude": 22.649,
+      "decimal_longitude": 121.488,
+      "records": 11293
+    }
+  ],
+  "records": [
+    {
+      "gbif_id": "1840947295",
+      "scientific_name": "Ctenoplusia Dufay, 1970",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824ba7fffffffff",
+      "decimal_latitude": 25.024523,
+      "decimal_longitude": 121.63843
+    },
+    {
+      "gbif_id": "1840948275",
+      "scientific_name": "Graphium sarpedon connectens (Fruhstorfer) 1906",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824ba7fffffffff",
+      "decimal_latitude": 25.088461,
+      "decimal_longitude": 121.585021
+    },
+    {
+      "gbif_id": "1840948307",
+      "scientific_name": "Ideopsis similis (Linnaeus, 1758)",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824ba7fffffffff",
+      "decimal_latitude": 25.088461,
+      "decimal_longitude": 121.585021
+    },
+    {
+      "gbif_id": "1840949234",
+      "scientific_name": "Erebidae Leach, 1815",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824ba7fffffffff",
+      "decimal_latitude": 24.961014,
+      "decimal_longitude": 121.563302
+    },
+    {
+      "gbif_id": "1840949562",
+      "scientific_name": "Spilarctia Butler, 1875",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824ba7fffffffff",
+      "decimal_latitude": 25.150064,
+      "decimal_longitude": 121.535792
+    },
+    {
+      "gbif_id": "1840950427",
+      "scientific_name": "Erebidae Leach, 1815",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824ba7fffffffff",
+      "decimal_latitude": 25.161645,
+      "decimal_longitude": 121.536429
+    },
+    {
+      "gbif_id": "1840950654",
+      "scientific_name": "Satyrium formosanum (Matsumura)",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824ba7fffffffff",
+      "decimal_latitude": 25.150064,
+      "decimal_longitude": 121.535792
+    },
+    {
+      "gbif_id": "1840951034",
+      "scientific_name": "Adrapsa Walker, 1859",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824ba7fffffffff",
+      "decimal_latitude": 23.673534,
+      "decimal_longitude": 120.79613
+    },
+    {
+      "gbif_id": "1840952482",
+      "scientific_name": "Gampola Moore, 1878",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824ba7fffffffff",
+      "decimal_latitude": 23.673534,
+      "decimal_longitude": 120.79613
+    },
+    {
+      "gbif_id": "1840952758",
+      "scientific_name": "Matsumursine horishanella (Matsumura, 1927)",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824ba7fffffffff",
+      "decimal_latitude": 25.160823,
+      "decimal_longitude": 121.500152
+    },
+    {
+      "gbif_id": "1840954121",
+      "scientific_name": "Borbo cinnara (Wallace, 1866)",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824ba7fffffffff",
+      "decimal_latitude": 24.825521,
+      "decimal_longitude": 121.017363
+    },
+    {
+      "gbif_id": "1840954274",
+      "scientific_name": "Erebidae Leach, 1815",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824b87fffffffff",
+      "decimal_latitude": 22.254611,
+      "decimal_longitude": 120.84075
+    },
+    {
+      "gbif_id": "1840954727",
+      "scientific_name": "Rachiades lichenicolor albimaculata (Okano, 1958)",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824b87fffffffff",
+      "decimal_latitude": 22.254611,
+      "decimal_longitude": 120.84075
+    },
+    {
+      "gbif_id": "1840954816",
+      "scientific_name": "Perina nuda Fabricius, 1787",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824b87fffffffff",
+      "decimal_latitude": 22.254611,
+      "decimal_longitude": 120.84075
+    },
+    {
+      "gbif_id": "1840955350",
+      "scientific_name": "Limacodidae Duponchel, 1845",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824b87fffffffff",
+      "decimal_latitude": 22.84724,
+      "decimal_longitude": 121.066916
+    },
+    {
+      "gbif_id": "1840955875",
+      "scientific_name": "Metaemene atrigutta (Walker, 1862)",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824ba7fffffffff",
+      "decimal_latitude": 23.752444,
+      "decimal_longitude": 120.620642
+    },
+    {
+      "gbif_id": "1840955915",
+      "scientific_name": "Catoria sublavaria (Guenée, [1858])",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824ba7fffffffff",
+      "decimal_latitude": 23.752444,
+      "decimal_longitude": 120.620642
+    },
+    {
+      "gbif_id": "1840955951",
+      "scientific_name": "Rhodoneura Guenée, 1858",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824ba7fffffffff",
+      "decimal_latitude": 25.016667,
+      "decimal_longitude": 121.557531
+    },
+    {
+      "gbif_id": "1840956028",
+      "scientific_name": "Ericeia Walker, 1858",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824ba7fffffffff",
+      "decimal_latitude": 25.049147,
+      "decimal_longitude": 121.419841
+    },
+    {
+      "gbif_id": "1840956046",
+      "scientific_name": "Ectropis Hübner, [1825]",
+      "class_name_snapshot": "Insecta",
+      "has_audio": false,
+      "species_key": null,
+      "h3_r2": "824ba7fffffffff",
+      "decimal_latitude": 25.049147,
+      "decimal_longitude": 121.419841
+    }
+  ],
+  "audioRecords": [
+    {
+      "gbif_id": "5007316925",
+      "scientific_name": "Hypsipetes leucocephalus nigerrimus Gould, 1863",
+      "h3_r2": "824bb7fffffffff"
+    },
+    {
+      "gbif_id": "5007473017",
+      "scientific_name": "Zhangixalus taipeianus (Liang & Wang, 1978)",
+      "h3_r2": "824ba7fffffffff"
+    },
+    {
+      "gbif_id": "5007542171",
+      "scientific_name": "Teleogryllus (Brachyteleogryllus) occipitalis (Serville, 1838)",
+      "h3_r2": "824ba7fffffffff"
+    },
+    {
+      "gbif_id": "5007552789",
+      "scientific_name": "Zhangixalus moltrechti (Boulenger, 1908)",
+      "h3_r2": "824ba7fffffffff"
+    },
+    {
+      "gbif_id": "5007569172",
+      "scientific_name": "Eudynamys scolopaceus (Linnaeus, 1758)",
+      "h3_r2": "82411ffffffffff"
+    },
+    {
+      "gbif_id": "5007625920",
+      "scientific_name": "Alcippe morrisonia Swinhoe, 1863",
+      "h3_r2": "824ba7fffffffff"
+    },
+    {
+      "gbif_id": "5007681906",
+      "scientific_name": "Zhangixalus moltrechti (Boulenger, 1908)",
+      "h3_r2": "824ba7fffffffff"
+    },
+    {
+      "gbif_id": "5007693774",
+      "scientific_name": "Athene noctua (Scopoli, 1769)",
+      "h3_r2": "8230affffffffff"
+    },
+    {
+      "gbif_id": "5007731355",
+      "scientific_name": "Pomatorhinus ruficollis Hodgson, 1836",
+      "h3_r2": "82411ffffffffff"
+    },
+    {
+      "gbif_id": "5007737322",
+      "scientific_name": "Athene noctua (Scopoli, 1769)",
+      "h3_r2": "8230affffffffff"
+    }
+  ],
+  "storage": [
+    {
+      "relname": "datasets",
+      "bytes": "73728"
+    },
+    {
+      "relname": "map_cells",
+      "bytes": "36012032"
+    },
+    {
+      "relname": "media",
+      "bytes": "455811072"
+    },
+    {
+      "relname": "occurrences",
+      "bytes": "1428742144"
+    },
+    {
+      "relname": "species",
+      "bytes": "98304"
+    },
+    {
+      "relname": "species_cells",
+      "bytes": "663552"
+    }
+  ],
+  "plans": {
+    "detail": {
+      "Plan": {
+        "Node Type": "Index Scan",
+        "Parallel Aware": false,
+        "Async Capable": false,
+        "Scan Direction": "Forward",
+        "Index Name": "occurrences_pkey",
+        "Relation Name": "occurrences",
+        "Alias": "occurrences",
+        "Startup Cost": 0.43,
+        "Total Cost": 8.45,
+        "Plan Rows": 1,
+        "Plan Width": 45,
+        "Actual Startup Time": 0.112,
+        "Actual Total Time": 0.119,
+        "Actual Rows": 1,
+        "Actual Loops": 1,
+        "Disabled": false,
+        "Index Cond": "((dataset_id = '3'::bigint) AND (gbif_id = '1840947295'::bigint))",
+        "Rows Removed by Index Recheck": 0,
+        "Index Searches": 1,
+        "Shared Hit Blocks": 1,
+        "Shared Read Blocks": 5,
+        "Shared Dirtied Blocks": 1,
+        "Shared Written Blocks": 0,
+        "Local Hit Blocks": 0,
+        "Local Read Blocks": 0,
+        "Local Dirtied Blocks": 0,
+        "Local Written Blocks": 0,
+        "Temp Read Blocks": 0,
+        "Temp Written Blocks": 0
+      },
+      "Planning": {
+        "Shared Hit Blocks": 2,
+        "Shared Read Blocks": 1,
+        "Shared Dirtied Blocks": 0,
+        "Shared Written Blocks": 0,
+        "Local Hit Blocks": 0,
+        "Local Read Blocks": 0,
+        "Local Dirtied Blocks": 0,
+        "Local Written Blocks": 0,
+        "Temp Read Blocks": 0,
+        "Temp Written Blocks": 0
+      },
+      "Planning Time": 0.148,
+      "Triggers": [],
+      "Execution Time": 0.135
+    },
+    "cellPage": {
+      "Plan": {
+        "Node Type": "Limit",
+        "Parallel Aware": false,
+        "Async Capable": false,
+        "Startup Cost": 0.43,
+        "Total Cost": 91.24,
+        "Plan Rows": 101,
+        "Plan Width": 8,
+        "Actual Startup Time": 0.013,
+        "Actual Total Time": 2.974,
+        "Actual Rows": 101,
+        "Actual Loops": 1,
+        "Disabled": false,
+        "Shared Hit Blocks": 56,
+        "Shared Read Blocks": 194,
+        "Shared Dirtied Blocks": 0,
+        "Shared Written Blocks": 0,
+        "Local Hit Blocks": 0,
+        "Local Read Blocks": 0,
+        "Local Dirtied Blocks": 0,
+        "Local Written Blocks": 0,
+        "Temp Read Blocks": 0,
+        "Temp Written Blocks": 0,
+        "Plans": [
+          {
+            "Node Type": "Index Scan",
+            "Parent Relationship": "Outer",
+            "Parallel Aware": false,
+            "Async Capable": false,
+            "Scan Direction": "Forward",
+            "Index Name": "occurrences_pkey",
+            "Relation Name": "occurrences",
+            "Alias": "occurrences",
+            "Startup Cost": 0.43,
+            "Total Cost": 332492.56,
+            "Plan Rows": 369799,
+            "Plan Width": 8,
+            "Actual Startup Time": 0.013,
+            "Actual Total Time": 2.961,
+            "Actual Rows": 101,
+            "Actual Loops": 1,
+            "Disabled": false,
+            "Index Cond": "(dataset_id = '3'::bigint)",
+            "Rows Removed by Index Recheck": 0,
+            "Filter": "(h3_r2 = '824ba7fffffffff'::text)",
+            "Rows Removed by Filter": 22,
+            "Index Searches": 1,
+            "Shared Hit Blocks": 56,
+            "Shared Read Blocks": 194,
+            "Shared Dirtied Blocks": 0,
+            "Shared Written Blocks": 0,
+            "Local Hit Blocks": 0,
+            "Local Read Blocks": 0,
+            "Local Dirtied Blocks": 0,
+            "Local Written Blocks": 0,
+            "Temp Read Blocks": 0,
+            "Temp Written Blocks": 0
+          }
+        ]
+      },
+      "Planning": {
+        "Shared Hit Blocks": 0,
+        "Shared Read Blocks": 0,
+        "Shared Dirtied Blocks": 0,
+        "Shared Written Blocks": 0,
+        "Local Hit Blocks": 0,
+        "Local Read Blocks": 0,
+        "Local Dirtied Blocks": 0,
+        "Local Written Blocks": 0,
+        "Temp Read Blocks": 0,
+        "Temp Written Blocks": 0
+      },
+      "Planning Time": 0.101,
+      "Triggers": [],
+      "Execution Time": 3.006
+    },
+    "audioCellPage": {
+      "Plan": {
+        "Node Type": "Limit",
+        "Parallel Aware": false,
+        "Async Capable": false,
+        "Startup Cost": 293.95,
+        "Total Cost": 294.07,
+        "Plan Rows": 49,
+        "Plan Width": 8,
+        "Actual Startup Time": 12.35,
+        "Actual Total Time": 12.365,
+        "Actual Rows": 101,
+        "Actual Loops": 1,
+        "Disabled": false,
+        "Shared Hit Blocks": 7786,
+        "Shared Read Blocks": 0,
+        "Shared Dirtied Blocks": 0,
+        "Shared Written Blocks": 0,
+        "Local Hit Blocks": 0,
+        "Local Read Blocks": 0,
+        "Local Dirtied Blocks": 0,
+        "Local Written Blocks": 0,
+        "Temp Read Blocks": 0,
+        "Temp Written Blocks": 0,
+        "Plans": [
+          {
+            "Node Type": "Sort",
+            "Parent Relationship": "Outer",
+            "Parallel Aware": false,
+            "Async Capable": false,
+            "Startup Cost": 293.95,
+            "Total Cost": 294.07,
+            "Plan Rows": 49,
+            "Plan Width": 8,
+            "Actual Startup Time": 12.349,
+            "Actual Total Time": 12.355,
+            "Actual Rows": 101,
+            "Actual Loops": 1,
+            "Disabled": false,
+            "Sort Key": [
+              "gbif_id"
+            ],
+            "Sort Method": "top-N heapsort",
+            "Sort Space Used": 25,
+            "Sort Space Type": "Memory",
+            "Shared Hit Blocks": 7786,
+            "Shared Read Blocks": 0,
+            "Shared Dirtied Blocks": 0,
+            "Shared Written Blocks": 0,
+            "Local Hit Blocks": 0,
+            "Local Read Blocks": 0,
+            "Local Dirtied Blocks": 0,
+            "Local Written Blocks": 0,
+            "Temp Read Blocks": 0,
+            "Temp Written Blocks": 0,
+            "Plans": [
+              {
+                "Node Type": "Index Scan",
+                "Parent Relationship": "Outer",
+                "Parallel Aware": false,
+                "Async Capable": false,
+                "Scan Direction": "Forward",
+                "Index Name": "occurrences_dataset_h3_r8_audio_gbif_idx",
+                "Relation Name": "occurrences",
+                "Alias": "occurrences",
+                "Startup Cost": 0.28,
+                "Total Cost": 292.57,
+                "Plan Rows": 49,
+                "Plan Width": 8,
+                "Actual Startup Time": 8.173,
+                "Actual Total Time": 12.173,
+                "Actual Rows": 1640,
+                "Actual Loops": 1,
+                "Disabled": false,
+                "Index Cond": "(dataset_id = '3'::bigint)",
+                "Rows Removed by Index Recheck": 0,
+                "Filter": "(h3_r2 = '824ba7fffffffff'::text)",
+                "Rows Removed by Filter": 6102,
+                "Index Searches": 1,
+                "Shared Hit Blocks": 7786,
+                "Shared Read Blocks": 0,
+                "Shared Dirtied Blocks": 0,
+                "Shared Written Blocks": 0,
+                "Local Hit Blocks": 0,
+                "Local Read Blocks": 0,
+                "Local Dirtied Blocks": 0,
+                "Local Written Blocks": 0,
+                "Temp Read Blocks": 0,
+                "Temp Written Blocks": 0
+              }
+            ]
+          }
+        ]
+      },
+      "Planning": {
+        "Shared Hit Blocks": 0,
+        "Shared Read Blocks": 0,
+        "Shared Dirtied Blocks": 0,
+        "Shared Written Blocks": 0,
+        "Local Hit Blocks": 0,
+        "Local Read Blocks": 0,
+        "Local Dirtied Blocks": 0,
+        "Local Written Blocks": 0,
+        "Temp Read Blocks": 0,
+        "Temp Written Blocks": 0
+      },
+      "Planning Time": 0.085,
+      "Triggers": [],
+      "Execution Time": 12.377
+    },
+    "coordinatePage": {
+      "Plan": {
+        "Node Type": "Limit",
+        "Parallel Aware": false,
+        "Async Capable": false,
+        "Startup Cost": 0.43,
+        "Total Cost": 111.66,
+        "Plan Rows": 101,
+        "Plan Width": 8,
+        "Actual Startup Time": 0.197,
+        "Actual Total Time": 1.719,
+        "Actual Rows": 101,
+        "Actual Loops": 1,
+        "Disabled": false,
+        "Shared Hit Blocks": 187,
+        "Shared Read Blocks": 123,
+        "Shared Dirtied Blocks": 1,
+        "Shared Written Blocks": 0,
+        "Local Hit Blocks": 0,
+        "Local Read Blocks": 0,
+        "Local Dirtied Blocks": 0,
+        "Local Written Blocks": 0,
+        "Temp Read Blocks": 0,
+        "Temp Written Blocks": 0,
+        "Plans": [
+          {
+            "Node Type": "Index Only Scan",
+            "Parent Relationship": "Outer",
+            "Parallel Aware": false,
+            "Async Capable": false,
+            "Scan Direction": "Forward",
+            "Index Name": "occurrences_dataset_coordinates_gbif_idx",
+            "Relation Name": "occurrences",
+            "Alias": "occurrences",
+            "Startup Cost": 0.43,
+            "Total Cost": 1132.62,
+            "Plan Rows": 1028,
+            "Plan Width": 8,
+            "Actual Startup Time": 0.196,
+            "Actual Total Time": 1.708,
+            "Actual Rows": 101,
+            "Actual Loops": 1,
+            "Disabled": false,
+            "Index Cond": "((dataset_id = '3'::bigint) AND (decimal_latitude = '22.675'::double precision) AND (decimal_longitude = '121.469'::double precision))",
+            "Rows Removed by Index Recheck": 0,
+            "Heap Fetches": 202,
+            "Index Searches": 1,
+            "Shared Hit Blocks": 187,
+            "Shared Read Blocks": 123,
+            "Shared Dirtied Blocks": 1,
+            "Shared Written Blocks": 0,
+            "Local Hit Blocks": 0,
+            "Local Read Blocks": 0,
+            "Local Dirtied Blocks": 0,
+            "Local Written Blocks": 0,
+            "Temp Read Blocks": 0,
+            "Temp Written Blocks": 0
+          }
+        ]
+      },
+      "Planning": {
+        "Shared Hit Blocks": 0,
+        "Shared Read Blocks": 0,
+        "Shared Dirtied Blocks": 0,
+        "Shared Written Blocks": 0,
+        "Local Hit Blocks": 0,
+        "Local Read Blocks": 0,
+        "Local Dirtied Blocks": 0,
+        "Local Written Blocks": 0,
+        "Temp Read Blocks": 0,
+        "Temp Written Blocks": 0
+      },
+      "Planning Time": 0.154,
+      "Triggers": [],
+      "Execution Time": 1.737
+    }
+  }
+}

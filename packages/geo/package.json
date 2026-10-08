@@ -1,0 +1,12 @@
+{
+  "name": "@gbif-globe/geo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "@gbif-globe/contracts": "*",
+    "h3-js": "^4.5.0"
+  }
+}

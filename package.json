@@ -2,22 +2,48 @@
   "name": "gbif-photo-globe-workspace",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "engines": {
     "node": ">=22.13.0"
   },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "scripts": {
-    "install:frontend": "node scripts/run-frontend.mjs install",
-    "install:backend": "node scripts/run-backend.mjs install",
-    "install:all": "npm run install:frontend && npm run install:backend",
-    "dev": "node scripts/run-frontend.mjs dev",
-    "build": "node scripts/run-frontend.mjs build",
-    "build:api": "node scripts/run-backend.mjs build",
-    "build:all": "npm run build && npm run build:api",
-    "test": "node scripts/run-frontend.mjs test",
-    "test:api": "node scripts/run-backend.mjs test",
-    "test:all": "npm test && npm run test:api",
-    "preview": "node scripts/run-frontend.mjs preview",
-    "start": "node scripts/run-frontend.mjs start",
-    "dev:api": "node scripts/run-backend.mjs dev"
+    "dev": "node scripts/run.mjs web dev",
+    "dev:web": "node scripts/run.mjs web dev",
+    "build": "node scripts/run.mjs web build",
+    "build:web": "node scripts/run.mjs web build",
+    "start": "node scripts/run.mjs web start",
+    "start:web": "node scripts/run.mjs web start",
+    "preview": "node scripts/run.mjs web start",
+    "test": "vitest run packages apps",
+    "test:all": "vitest run packages apps",
+    "test:workspaces": "vitest run packages apps",
+    "db:migrate": "node scripts/run.mjs db db:migrate",
+    "db:seed": "node scripts/run.mjs worker db:seed",
+    "data:setup": "node --import tsx scripts/data-setup.mjs",
+    "dwca:import": "node scripts/run.mjs worker dwca:import",
+    "map:export": "node scripts/run.mjs worker map:export",
+    "map:build": "node --import tsx scripts/build-map.mjs",
+    "map:verify": "node scripts/run.mjs worker map:verify",
+    "map:upload": "node scripts/run.mjs worker map:upload",
+    "release:publish": "node scripts/run.mjs worker release:publish",
+    "release:rollback": "node scripts/run.mjs worker release:rollback",
+    "media:sync": "node scripts/run.mjs worker media:sync",
+    "media:thumbnails": "node --import tsx scripts/warm-thumbnails.mjs",
+    "performance:web": "node apps/web/scripts/performance.mjs",
+    "basemap:update": "node scripts/update-basemap.mjs",
+    "typecheck:web": "node scripts/run.mjs web typecheck",
+    "smoke:web": "node apps/web/scripts/smoke.mjs",
+    "db:prune-retired": "node scripts/run.mjs worker db:prune-retired",
+    "audio:worker": "node scripts/run.mjs worker audio:worker",
+    "test:audio-queue": "node scripts/test-audio-queue.mjs"
+  },
+  "dependencies": {
+    "dotenv": "17.4.2",
+    "pg": "^8.13.0",
+    "tsx": "^4.19.0"
   }
 }

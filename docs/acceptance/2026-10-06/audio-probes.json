@@ -1,0 +1,44 @@
+[
+  {
+    "gbif_id": "5007316925",
+    "scientific_name": "Hypsipetes leucocephalus nigerrimus Gould, 1863",
+    "identifier": "https://static.inaturalist.org/sounds/1280853.m4a?1736151951",
+    "format": "audio/mp4",
+    "probes": {
+      "source": {
+        "status": 206,
+        "contentType": "audio/mp4",
+        "contentRange": "bytes 0-4095/186988",
+        "bytes": 4096
+      },
+      "proxy": {
+        "status": 400,
+        "contentType": "application/json",
+        "contentRange": null,
+        "bytes": 73,
+        "body": "{\"error\":\"Audio source host is not in allowed list\",\"code\":\"BAD_REQUEST\"}"
+      }
+    }
+  },
+  {
+    "gbif_id": "5007473017",
+    "scientific_name": "Zhangixalus taipeianus (Liang & Wang, 1978)",
+    "identifier": "https://static.inaturalist.org/sounds/1277455.m4a?1735748425",
+    "format": "audio/mp4",
+    "probes": {
+      "source": {
+        "status": 206,
+        "contentType": "audio/mp4",
+        "contentRange": "bytes 0-4095/322308",
+        "bytes": 4096
+      },
+      "proxy": {
+        "status": 400,
+        "contentType": "application/json",
+        "contentRange": null,
+        "bytes": 73,
+        "body": "{\"error\":\"Audio source host is not in allowed list\",\"code\":\"BAD_REQUEST\"}"
+      }
+    }
+  }
+]

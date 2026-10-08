@@ -1,9 +1,0 @@
-node_modules
-dist
-artifacts
-coverage
-.env
-.env.*
-!.env.example
-npm-debug.log*
-.DS_Store

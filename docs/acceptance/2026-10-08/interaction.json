@@ -1,0 +1,36 @@
+{
+  "measuredAt": "2026-10-08T01:33:28.035Z",
+  "base": "http://127.0.0.1:4318",
+  "results": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "markers": 7,
+      "audioMarkers": 30,
+      "title": "Neobythites nanhaiensis Chen, Zhao, Yang, Zhang, He, Zhang, Wang & Zhong, 2026",
+      "popupFits": true,
+      "popupFollowsMap": true,
+      "audioDetails": true,
+      "themeRoundTrip": true,
+      "controlsClear": true,
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "markers": 9,
+      "audioMarkers": 13,
+      "title": "Neobythites nanhaiensis Chen, Zhao, Yang, Zhang, He, Zhang, Wang & Zhong, 2026",
+      "popupFits": true,
+      "popupFollowsMap": true,
+      "audioDetails": true,
+      "themeRoundTrip": true,
+      "controlsClear": true,
+      "errors": []
+    }
+  ]
+}

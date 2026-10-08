@@ -1,0 +1,13 @@
+{
+  "name": "@gbif-globe/media",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": { ".": "./src/index.ts", "./audio-worker": "./src/audioWorker.ts" },
+  "dependencies": {
+    "@imagekit/nodejs": "^7.10.0",
+    "@gbif-globe/contracts": "*"
+  }
+}
